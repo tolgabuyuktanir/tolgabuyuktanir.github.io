@@ -6,8 +6,4 @@
 
 - First-prize Enterprise Scholarship, 2021.
 
-- First-prize Academic Scholarship, 2019.
-
-- Test
-
-- Test2
+- Test.

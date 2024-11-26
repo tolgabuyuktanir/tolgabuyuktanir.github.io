@@ -14,5 +14,5 @@ B.E., Data Science and Big Data Technology, China University of Mining and Techn
 #### Research Interests
 Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
 
-#### TEST
-TREsttestteest
+#### Test
+Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
