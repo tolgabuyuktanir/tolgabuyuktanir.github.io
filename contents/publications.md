@@ -1,12 +1,35 @@
-- <strong>S. Li</strong>, X. Yang*, A. Cao*, K. Fan, Y. Liu, C. Wang, and Q.Niu (2024). Label Noise-Robust Learning for Microseismic Arrival Time Picking. <strong>In revision.</strong> [[Code]](https://github.com/senli1073/LNRL)
+- **Tekgöz, Hilal; Özbek, Muhammed Murat; Büyüktanır, Tolga; Uz, Harun**. *Turkish Speech Recognition for Voice Search Applications*. 2024 32nd Signal Processing and Communications Applications Conference (SIU), IEEE, 2024, pp. 1–4.
 
-- X. Yang, <strong>S. Li</strong>, A. Cao*, C. Wang*, Y. Liu, X. Bai, and Q. Niu (2024). Deep Transfer Learning for P-wave Arrival Identification and Automatic Seismic Source Location in Underground Mines. <strong>International Journal of Rock Mechanics and Mining Sciences</strong>. [[Paper]](https://doi.org/10.1016/j.ijrmms.2024.105888)
+- **Büyüktanır, Tolga; Aktaş, Mehmet S**. *Predictive Prefetching in Client-Server Systems: A Navigational Behavior Modeling Approach*. *International Journal of Software Engineering and Knowledge Engineering*, 2024.
 
-- <strong>S. Li</strong>, X. Yang*, A. Cao*, C. Wang, Y. Liu, Y. Liu, and Q. Niu (2024). SeisT: A Foundational Deep-Learning Model for Earthquake Monitoring Tasks. <strong>IEEE Transactions on Geoscience and Remote Sensing</strong>. [[Paper]](https://doi.org/10.1109/TGRS.2024.3371503) [[Code]](https://github.com/senli1073/SeisT)
+- **Büyüktanır, Tolga; Uz, Harun; Erbay, Batıray; Alptekin, Ali; Özdemir, Fırat; Karaagac, Abdullah**. *Controlling Collaborative Robots in Factory Environments with Turkish Voice Commands*. 2023 8th International Conference on Computer Science and Engineering (UBMK), IEEE, 2023, pp. 191–194.
 
-- A. Cao, X. Yang, C. Wang*, <strong>S. Li</strong>, Y. Liu, L. Dou, and Q. Niu (2023). High-Precision Phase Picking and Automatic Source Locating Method for Seismicity in Mines Based on Deep Transfer Learning. <strong>Journal of China Coal Society</strong>. [[Paper]](https://doi.org/10.13225/j.cnki.jccs.2023.0095)
+- **Büyüktanır, Tolga; Uz, Harun; Erbay, Batıray; Alptekin, Ali; Özdemir, Fırat; Karaagac, Abdullah**. *Automatic Dataset Generation from 3D Object Models for Object Detection Applications*. 2023 8th International Conference on Computer Science and Engineering (UBMK), IEEE, 2023, pp. 1–4.
 
-- A. Cao, Y. Liu, X. Yang*, <strong>S. Li</strong>, C. Wang, X. Bai, and Y. Liu (2022). Physical Index and Data Fusion-Driven Method for Coal Burst Prediction in Time Sequence. <strong>Journal of China Coal Society</strong>. [[Paper]](https://doi.org/10.13225/j.cnki.jccs.2022.0680)
+- **Büyüktanır, Tolga; Sigirci, I Onur; Aktaş, Mehmet S**. *Enhancing Accessibility to Data in Data-Intensive Web Applications by Using Intelligent Web Prefetching Methodologies*. *International Journal of Software Engineering and Knowledge Engineering*, Vol. 33, No. 09, 2023, pp. 1405–1438.
 
-- X. Yang, X. Yu, C. Zhang, <strong>S. Li</strong>, and Q. Niu (2021). MineGPS: Battery-Free Localization Base Station for Coal Mine Environment. <strong>IEEE Communications Letters</strong>. [[Paper]](https://doi.org/10.1109/LCOMM.2021.3081593)
+- **Büyüktanır, Büşra; Yıldız, Kazım; Ülkü, Eyüp Emre; Büyüktanır, Tolga**. *du-CBA: Veriden Habersiz ve Artırımlı Sınıflandırmaya Dayalı Birliktelik Kuralları Çıkarma Mimarisi*. *Gazi Üniversitesi Mühendislik Mimarlık Fakültesi Dergisi*, Vol. 38, No. 3, 2023, pp. 1919–1930.
 
+- **Büyüktanır, Tolga; Erbay, Batıray; Altun, Mert**. *Reinforcement Learning-Driven Continuous and Crashless Load Test Architecture*. 2022 30th Signal Processing and Communications Applications Conference (SIU), IEEE, 2022, pp. 1–4.
+
+- **Erbay, Batıray; Büyüktanır, Tolga; Altun, Mert; Uz, Harun**. *Server Busy Times Finder and Synthetic User Log Generator On-Demand Architecture*. 2022 7th International Conference on Computer Science and Engineering (UBMK), IEEE, 2022, pp. 317–320.
+
+- **Büyüktanır, Tolga; Aktaş, Mehmet S**. *A Deep Learning-Based Prefetching Approach to Enable Scalability for Data-Intensive Applications*. 2022 IEEE International Conference on Big Data (Big Data), IEEE, 2022, pp. 2716–2721.
+
+- **Büyüktanır, Tolga; Aktaş, Mehmet S**. *Mobile Prefetching and Web Prefetching: A Systematic Literature Review*. *International Conference on Computational Science and Its Applications*, Springer, Cham, 2022, pp. 75–89.
+
+- **Büyüktanır, Tolga; May, Handan Keçici; Şebboy, Cunay; Yalçın, Didem; Aktaş, Mehmet S**. *Design and Verification of Cargo Management Processes Using Microservice-Based Software Architecture: A Case Study*. EasyChair, 2022.
+
+- **Büyüktanır, Tolga; Topcu, Ahmet Ercan**. *Equi-Depth Histogram Construction Methodology for Big Data Tools*. Politeknik Dergisi, 2020.
+
+- **Büyüktanır, Tolga; Toraman, Taner**. *Auditor's Opinions Prediction with Machine Learning Algorithms*. 2020 28th Signal Processing and Communications Applications Conference (SIU), IEEE, 2021.
+
+- **Büyüktanır, Tolga; Tüzün, Hakan; Aktaş, Mehmet S**. *Provisioning System for Application Virtualization Environments*. In *Big Data Analytics for Sustainable Computing*, IGI Global, 2020, pp. 131–145.
+
+- **Haldorai, Anandakumar; Ramu, Arulmurugan**. *Big Data Analytics for Sustainable Computing*. IGI Global, 2019.
+
+- **Büyüktanır, Tolga; Ozer, Busra**. *Internet of Things*. KODLAB, 2017.
+
+- **Büyüktanır, Tolga**. *Novel Merging Based Height-Balanced Histogram Computation for Big Data*. Ankara Yıldırım Beyazıt Üniversitesi Fen Bilimleri Enstitüsü, 2017.
+
+- **Yıldız, Burak; Büyüktanır, Tolga; Emekci, Fatih**. *Equi-depth histogram construction for big data with quality guarantees*. arXiv preprint arXiv:1606.05633, 2016.

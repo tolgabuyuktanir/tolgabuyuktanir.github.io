@@ -1,11 +1,12 @@
 
+#### About Me
 I am a PhD candidate in the Computer Engineering Department at Yıldız Technical University, Istanbul, Turkey. I hold a Bachelor's degree in Computer Engineering from Erciyes University (2014) and a Master's degree in Computer Engineering from Ankara Yıldırım Beyazıt University (2017).
 
 My research focuses on smart caching and prefetching for data-intensive web and mobile applications, large-scale data management, machine learning, and explainable AI. I am passionate about designing innovative solutions that enhance performance, scalability, and transparency in complex systems.
 
 
 ---
-### Tools
+#### Tools
 ![Python](https://img.shields.io/badge/-Python-000?style=flat-square&logo=Python)
 ![Java](https://img.shields.io/badge/-Java-000?style=flat-square&logo=Java&logoColor=007396)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-000?style=flat-square&logo=TypeScript)
@@ -14,7 +15,7 @@ My research focuses on smart caching and prefetching for data-intensive web and 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-000?style=flat-square&logo=JavaScript)
 ![C](https://img.shields.io/badge/-C-000?style=flat-square&logo=C)
 
-### Technologies
+#### Technologies
 ![Linux](https://img.shields.io/badge/-Linux-000?style=flat-square&logo=Linux)
 ![Apache Hadoop](https://img.shields.io/badge/Apache_Hadoop-222?style=flat-square&logo=apache-hadoop&logoColor=66CCFF)
 ![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white)
@@ -23,7 +24,7 @@ My research focuses on smart caching and prefetching for data-intensive web and 
 ![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apache-kafka&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 
-### 🌐 Connect with Me
+#### 🌐 Connect with Me
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tolgabuyuktanir@gmail.com)
 ![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCxDnkMlK_Vvru7awNIgD_oQ)
 ![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2Ftolgabuyuktanir?style=flat-square)

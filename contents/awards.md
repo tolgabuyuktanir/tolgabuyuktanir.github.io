@@ -1,9 +1,2 @@
-- First-prize Academic Scholarship, 2023.
-
-- Freshman Academic Scholarship, 2022.
-
-- Excellent Graduation Project of Jiangsu Province, 2022.
-
-- First-prize Enterprise Scholarship, 2021.
-
-- Test.
+- 100/2000 YOK Doctoral Scholarship
+- UBMK'22 Best Paper Awards (2 nd Place)
