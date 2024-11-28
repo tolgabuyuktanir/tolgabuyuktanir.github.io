@@ -1,69 +1,39 @@
+## 👋 Hi, I'm Tolga Buyuktanir!
+### Welcome to my GitHub profile! I'm a machine learning and big data Developer passionate about smart caching, prefetching, and data-unaware learning. 🌟
+---
+### Tools
+![Python](https://img.shields.io/badge/-Python-000?style=flat-square&logo=Python)
+![Java](https://img.shields.io/badge/-Java-000?style=flat-square&logo=Java&logoColor=007396)
+![TypeScript](https://img.shields.io/badge/-TypeScript-000?style=flat-square&logo=TypeScript)
+![C++](https://img.shields.io/badge/-C++-000?style=flat-square&logo=c%2b%2b&logoColor=00599C)
+![SQL](https://img.shields.io/badge/-SQL-000?style=flat-square&logo=MySQL)
+![JavaScript](https://img.shields.io/badge/-JavaScript-000?style=flat-square&logo=JavaScript)
+![C](https://img.shields.io/badge/-C-000?style=flat-square&logo=C)
 
+### Technologies
+![Linux](https://img.shields.io/badge/-Linux-000?style=flat-square&logo=Linux)
+![Apache Hadoop](https://img.shields.io/badge/Apache_Hadoop-222?style=flat-square&logo=apache-hadoop&logoColor=66CCFF)
+![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white)
+![Couchbase](https://img.shields.io/badge/Couchbase-EA2328?style=flat-square&logo=Couchbase&logoColor=white)
+![Redis](https://img.shields.io/badge/-Redis-000?style=flat-square&logo=Redis)
+![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apache-kafka&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 
-![Github Forks](https://img.shields.io/github/forks/senli1073/senli1073.github.io?style=flat)
-![Github Stars](https://img.shields.io/github/stars/senli1073/senli1073.github.io?style=flat)
-![License](https://img.shields.io/github/license/senli1073/senli1073.github.io)
-![Last Commit](https://img.shields.io/github/last-commit/senli1073/senli1073.github.io)
+### 🌐 Connect with Me
+![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCxDnkMlK_Vvru7awNIgD_oQ?style=flat-square)
+![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2Ftolgabuyuktanir?style=flat-square)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tolga-buyuktanir-6b63733a/)
+[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-4285F4?style=flat-square&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=D2Md-J4AAAAJ)
 
-# A simple Github Pages template for academic personal website.
+### 📊 GitHub Stats
 
-## Preview
-[![Screenshot of the Website](https://raw.githubusercontent.com/senli1073/senli1073.github.io/main/screenshot_full.png)](https://senli1073.github.io/)
-
-
-## Introduction
-
-This is an academic personal website template based on [bootstrap](https://github.com/StartBootstrap/startbootstrap-new-age).
-
-The template is designed to integrate Markdown files as content input.  There's no need to compile the webpage before deployment.  Upon loading, the Markdown files are automatically parsed and embedded into the page.
-
-This template supports LaTeX formula input. You can use `$...$` and `\(...\)` as delimiters for inline-math, or use `$$...$$` and `\[...\]` as delimiters for display-math. Macros such as `\ref{...}`, `\eqref{...}`, and `\begin{equation}...\end{equation}` are also supported. See [MathJax](https://docs.mathjax.org/en/latest/index.html) for more details.
-
-:milky_way: Demo: https://senli1073.github.io/
-
-
-## Getting Start
-### 1. Fork this repository
-The repository name should be `<username>.github.io`, which will also be your website's URL.
-
-
-### 2. Edit page content
-
-(1) Go to the folder where you want to store your project, and clone the new repository:
-```
-git clone https://github.com/<username>/<username>.github.io.git
-```
-The directory structure is as follows:
-
-```.
-.
-├── contents
-└── static
-    ├── assets
-    │   └── img
-    ├── css
-    └── js
-```
-
-(2) Modify the content of each section, which corresponds to `contents/*.md`.
-
-(3) Adjust the title, copyright information, and other text of the website in `contents/config.yml`
-
-(4) Replace background image and photo with new ones for your web pages in `static/assets/img/`
-
-(5) Push it: 
-```
-git commit -am 'init'
-git push
-```
-
-
-### 3. Enjoy
-
-Fire up a browser and go to `https://<username>.github.io`
-
-
-
-## License
-
-Copyright Sen Li, 2023. Licensed under an MIT license. You can copy and mess with this template.
+<div align="center">
+  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+    <img src="https://github-readme-stats.vercel.app/api?username=tolgabuyuktanir&show_icons=true&theme=radical" alt="GitHub Stats" width="280" height="200">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tolgabuyuktanir&layout=compact&theme=radical" alt="Top Languages" width="220" height="200">
+    <img src="https://streak-stats.demolab.com?user=tolgabuyuktanir&theme=radical&hide_border=true" alt="GitHub Streak" width="300" height="200">
+  </div>
+  <div style="display: flex; justify-content: center; margin-top: 20px;">
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tolgabuyuktanir&theme=radical" alt="Profile Summary" width="920" height="200">
+  </div>
+</div>
