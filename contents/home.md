@@ -24,7 +24,7 @@ My research focuses on smart caching and prefetching for data-intensive web and 
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 
 ### 🌐 Connect with Me
-![Gmail(https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tolgabuyuktanir@gmail.com)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tolgabuyuktanir@gmail.com)
 ![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCxDnkMlK_Vvru7awNIgD_oQ)
 ![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2Ftolgabuyuktanir?style=flat-square)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tolga-buyuktanir-6b63733a/)
