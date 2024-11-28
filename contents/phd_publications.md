@@ -1,4 +1,4 @@
-- **Büyüktanır, Tolga; Aktaş, Mehmet S**. *On the Use of Embedding Techniques for Modeling User Navigational Behavior in Intelligent Prefetching Strategies*. *Journal: Concurrency and Computations: Practice and Experience*, 2024.
+- **Büyüktanır, Tolga; Aktaş, Mehmet S**. *On the Use of Embedding Techniques for Modeling User Navigational Behavior in Intelligent Prefetching Strategies*. *Journal Concurrency and Computations Practice and Experience*, 2024.
 
 - **Büyüktanır, Tolga; Aktaş, Mehmet S**. *Predictive Prefetching in Client-Server Systems: A Navigational Behavior Modeling Approach*. *International Journal of Software Engineering and Knowledge Engineering*, 2024.
 
