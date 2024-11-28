@@ -1,4 +1,5 @@
-TOlga buyuktanır
+He is currently pursuing a Master's Degree in Computer Science, at School of Computer Science and Technology, China University of Mining and Technology, China.
+
 ---
 ### Tools
 ![Python](https://img.shields.io/badge/-Python-000?style=flat-square&logo=Python)
