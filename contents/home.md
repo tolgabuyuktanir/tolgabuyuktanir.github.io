@@ -35,11 +35,11 @@ My research focuses on smart caching and prefetching for data-intensive web and 
 
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-    <img src="https://github-readme-stats.vercel.app/api?username=tolgabuyuktanir&show_icons=true&theme=radical" alt="GitHub Stats" width="280" height="200">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tolgabuyuktanir&layout=compact&theme=radical" alt="Top Languages" width="220" height="200">
-    <img src="https://streak-stats.demolab.com?user=tolgabuyuktanir&theme=radical&hide_border=true" alt="GitHub Streak" width="300" height="200">
+    <img src="https://github-readme-stats.vercel.app/api?username=tolgabuyuktanir&show_icons=true" alt="GitHub Stats" width="280" height="200">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tolgabuyuktanir&layout=compact" alt="Top Languages" width="220" height="200">
+    <img src="https://streak-stats.demolab.com?user=tolgabuyuktanir&hide_border=true" alt="GitHub Streak" width="300" height="200">
   </div>
   <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tolgabuyuktanir&theme=radical" alt="Profile Summary" width="920" height="200">
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tolgabuyuktanir" alt="Profile Summary" width="920" height="200">
   </div>
 </div>
