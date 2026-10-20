@@ -143,7 +143,7 @@
     const moreBtn = document.getElementById('moreProjects');
     const moreWrap = moreBtn.parentElement;
     const projects = grid.querySelectorAll('.project');
-    const VISIBLE = 10;
+    const VISIBLE = 9;
     let expanded = false;
     projects.forEach((p, i) => { if (i >= VISIBLE) p.classList.add('extra'); });
     moreBtn.querySelector('.more-count').textContent = `(+${Math.max(projects.length - VISIBLE, 0)})`;
