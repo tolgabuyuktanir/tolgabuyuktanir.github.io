@@ -138,9 +138,30 @@
             });
         }));
     }
+    // show the first projects, reveal the rest on demand
+    const grid = document.getElementById('projectGrid');
+    const moreBtn = document.getElementById('moreProjects');
+    const moreWrap = moreBtn.parentElement;
+    const projects = grid.querySelectorAll('.project');
+    const VISIBLE = 10;
+    let expanded = false;
+    projects.forEach((p, i) => { if (i >= VISIBLE) p.classList.add('extra'); });
+    moreBtn.querySelector('.more-count').textContent = `(+${Math.max(projects.length - VISIBLE, 0)})`;
+    moreBtn.addEventListener('click', () => {
+        expanded = true;
+        grid.classList.remove('collapsed');
+        grid.querySelectorAll('.extra').forEach(p => p.classList.add('in'));
+        moreWrap.classList.add('hidden');
+    });
+    document.querySelectorAll('#projects .filter').forEach(btn => btn.addEventListener('click', () => {
+        const all = btn.dataset.filter === 'all';
+        grid.classList.toggle('collapsed', all && !expanded);
+        moreWrap.classList.toggle('hidden', !all || expanded);
+    }));
+
     setupFilter(
         document.querySelectorAll('#projects .filter'),
-        document.querySelectorAll('.project'), 'data-cat', 'filter');
+        projects, 'data-cat', 'filter');
     setupFilter(
         document.querySelectorAll('#pubFilters .filter'),
         document.querySelectorAll('.pub'), 'data-type', 'pub');
