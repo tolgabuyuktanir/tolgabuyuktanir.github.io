@@ -143,7 +143,7 @@
     const moreBtn = document.getElementById('moreProjects');
     const moreWrap = moreBtn.parentElement;
     const projects = grid.querySelectorAll('.project');
-    const VISIBLE = 9;
+    const VISIBLE = 11;
     let expanded = false;
     projects.forEach((p, i) => { if (i >= VISIBLE) p.classList.add('extra'); });
     moreBtn.querySelector('.more-count').textContent = `(+${Math.max(projects.length - VISIBLE, 0)})`;
@@ -184,15 +184,6 @@
     setupFilter(
         document.querySelectorAll('#pubFilters .filter'),
         pubs, 'data-type', 'pub');
-
-    // ---------- demo (lazy) ----------
-    document.getElementById('demoLoad').addEventListener('click', () => {
-        const frame = document.createElement('iframe');
-        frame.src = 'https://tbuyuktanir-crowbardemoapp.hf.space';
-        frame.title = 'Crowbar demo';
-        frame.loading = 'lazy';
-        document.getElementById('demoFrame').replaceChildren(frame);
-    });
 
     // ---------- contact drafts ----------
     const messageBox = document.getElementById('messageBox');

@@ -607,3 +607,4 @@ a.pub-title::after { content: " ↗"; color: var(--primary); font-size: .85em; }
 .send-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 4px; }
 .send-row .btn { justify-content: center; }
 @media (max-width: 640px) { .send-row { grid-template-columns: 1fr; } }
+.badge-award { color: #7c4a03; border-color: #f1d9a6; background: #fff7e6; }
