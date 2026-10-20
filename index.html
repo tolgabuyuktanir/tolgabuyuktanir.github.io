@@ -1,209 +1,770 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Academic Webpage" />
-    <meta name="author" content="tolgabuyuktanir" />
-    <title id="title"></title>
-
-    <!-- Icon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dr. Tolga Büyüktanır · AI & Data Consulting</title>
+    <meta name="description"
+        content="Dr. Tolga Büyüktanır — Yapay zekâ, büyük veri, bilgisayarlı görü, gizlilik korumalı hesaplama ve Ar-Ge danışmanlığı. AI, Big Data, Computer Vision & R&D consulting." />
+    <meta name="author" content="Tolga Büyüktanır" />
+    <meta property="og:title" content="Dr. Tolga Büyüktanır · AI & Data Consulting" />
+    <meta property="og:description"
+        content="10+ yıllık Ar-Ge deneyimi: makine öğrenmesi, LLM ajanları, bilgisayarlı görü, büyük veri ve TÜBİTAK projeleri." />
+    <meta property="og:image" content="https://tolgabuyuktanir.github.io/static/assets/img/me.jpeg" />
+    <meta property="og:url" content="https://tolgabuyuktanir.github.io/" />
+    <meta name="theme-color" content="#070b14" />
     <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
 
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
         rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
-        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="static/css/site.css" rel="stylesheet" />
 
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
-    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
-
-    <!-- Bootstrap core JS-->
-    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Markdown -->
-    <script type="text/javascript" src="static/js/marked.min.js"></script>
-
-    <!-- Mathematics -->
-    <script>
-        // See https://docs.mathjax.org/en/latest/index.html for more details.
-        MathJax = {
-            tex: {
-                packages: {},              // extensions to use
-                inlineMath: [              // start/end delimiter pairs for in-line math
-                    ['$', '$'],
-                    ['\\(', '\\)']
-                ],
-                displayMath: [             // start/end delimiter pairs for display math
-                    ['$$', '$$'],
-                    ['\\[', '\\]']
-                ],
-                processEscapes: false,      // use \$ to produce a literal dollar sign
-                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-                processRefs: true,         // process \ref{...} outside of math mode
-                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
-                tags: 'all',              // or 'ams' or 'all'
-                tagSide: 'right',          // side for \tag macros
-                tagIndent: '0.8em',        // amount to indent tags
-                useLabelIds: true,         // use label name rather than tag for ids
-                maxMacros: 10000,          // maximum number of macro substitutions per expression
-                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
-                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
-                formatError:               // function called when TeX syntax errors occur
-                    (jax, err) => jax.formatError(err)
-            }
-        };
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Tolga Büyüktanır",
+        "honorificPrefix": "Dr.",
+        "jobTitle": "AI & Data Consultant, R&D Manager",
+        "url": "https://tolgabuyuktanir.github.io/",
+        "email": "mailto:tolgabuyuktanir@gmail.com",
+        "alumniOf": ["Yıldız Technical University", "Ankara Yıldırım Beyazıt University", "Erciyes University"],
+        "sameAs": [
+            "https://github.com/tolgabuyuktanir",
+            "https://www.linkedin.com/in/tolga-buyuktanir-6b63733a/",
+            "https://scholar.google.com/citations?user=D2Md-J4AAAAJ",
+            "https://www.youtube.com/@tolgabuyuktanir",
+            "https://x.com/tolgabuyuktanir"
+        ]
+    }
     </script>
-    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-    <!-- Core JS-->
-    <script type="text/javascript" src="static/js/scripts.js"></script>
-    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
-
 </head>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
-            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                MENU
-                <i class="bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#page-top">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#phd_publications">PhD RELATED PUBLICATIONS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#demo">DEMO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
-                    </li>
-                </ul>
+<body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- ============ NAV ============ -->
+    <header class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="#top" class="brand" aria-label="Tolga Büyüktanır">
+                <span class="brand-mark">TB</span>
+                <span class="brand-text">Tolga Büyüktanır</span>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#services"><span data-l="tr">Hizmetler</span><span data-l="en">Services</span></a>
+                <a href="#projects"><span data-l="tr">Projeler</span><span data-l="en">Projects</span></a>
+                <a href="#about"><span data-l="tr">Hakkımda</span><span data-l="en">About</span></a>
+                <a href="#experience"><span data-l="tr">Deneyim</span><span data-l="en">Experience</span></a>
+                <a href="#research"><span data-l="tr">Yayınlar</span><span data-l="en">Research</span></a>
+                <a href="#contact" class="nav-cta"><span data-l="tr">İletişim</span><span data-l="en">Contact</span></a>
+            </nav>
+            <div class="nav-tools">
+                <button class="lang-toggle" id="langToggle" type="button" aria-label="Dil / Language">
+                    <span class="lang-opt" data-opt="tr">TR</span><span class="lang-opt" data-opt="en">EN</span>
+                </button>
+                <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false">
+                    <i class="bi bi-list"></i>
+                </button>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Top Section -->
-    <section class="top-section" style="background-image: url('static/assets/img/banner.jpg');">
-        <div class="top-section-content">
-            <div class="container px-5">
-                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
+    <main id="top">
+        <!-- ============ HERO ============ -->
+        <section class="hero">
+            <canvas id="heroCanvas" aria-hidden="true"></canvas>
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <span class="eyebrow">
+                        <span class="pulse"></span>
+                        <span data-l="tr">Yeni danışmanlık projelerine açığım</span>
+                        <span data-l="en">Available for new consulting engagements</span>
+                    </span>
+                    <h1>
+                        <span data-l="tr">Fikirden üretime:<span class="typed-line"><span class="grad" id="typed">yapay zekâ</span></span>ile ölçülebilir değer.</span>
+                        <span data-l="en">From idea to production:<span class="typed-line"><span class="grad" id="typedEn">AI</span></span>that delivers real value.</span>
+                    </h1>
+                    <p class="lead">
+                        <span data-l="tr">Ben <strong>Dr. Tolga Büyüktanır</strong>. 10+ yıldır makine öğrenmesi, büyük
+                            veri, bilgisayarlı görü, konuşma tanıma ve fintech alanlarında Ar-Ge projeleri yönetiyorum.
+                            Şirketlerin veriden ürün çıkarmasına, AI sistemlerini sahaya taşımasına ve TÜBİTAK
+                            projelerini kurgulamasına yardımcı oluyorum.</span>
+                        <span data-l="en">I'm <strong>Dr. Tolga Büyüktanır</strong>. For 10+ years I have led R&D in
+                            machine learning, big data, computer vision, speech recognition and fintech. I help
+                            companies turn data into products, ship AI systems to production and design publicly funded
+                            R&D projects.</span>
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <span data-l="tr">Ücretsiz ön görüşme</span><span data-l="en">Book a free intro call</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-ghost">
+                            <span data-l="tr">Projeleri incele</span><span data-l="en">See the work</span>
+                        </a>
+                    </div>
+                    <ul class="hero-social">
+                        <li><a href="https://github.com/tolgabuyuktanir" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/tolga-buyuktanir-6b63733a/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                        <li><a href="https://scholar.google.com/citations?user=D2Md-J4AAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a></li>
+                        <li><a href="https://www.youtube.com/@tolgabuyuktanir" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a></li>
+                        <li><a href="https://x.com/tolgabuyuktanir" target="_blank" rel="noopener" aria-label="X"><i class="bi bi-twitter-x"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="hero-card">
+                    <div class="portrait">
+                        <img src="static/assets/img/me.jpeg" alt="Tolga Büyüktanır" width="192" height="256" />
+                        <div class="ring" aria-hidden="true"></div>
+                    </div>
+                    <div class="hero-card-body">
+                        <strong>Dr. Tolga Büyüktanır</strong>
+                        <span>PhD · Computer Engineering</span>
+                        <span class="muted">R&D Manager @ Agra Fintech</span>
+                    </div>
+                    <div class="chip-row">
+                        <span class="chip">ML / DL</span><span class="chip">LLM Agents</span><span class="chip">Computer Vision</span>
+                        <span class="chip">Big Data</span><span class="chip">FHE</span><span class="chip">TÜBİTAK</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="stats">
+                    <div class="stat"><span class="num" data-count="10" data-suffix="+">0</span>
+                        <span class="label"><span data-l="tr">Yıl Ar-Ge deneyimi</span><span data-l="en">Years in R&D</span></span></div>
+                    <div class="stat"><span class="num" data-count="8">0</span>
+                        <span class="label"><span data-l="tr">TÜBİTAK destekli proje</span><span data-l="en">TÜBİTAK-funded projects</span></span></div>
+                    <div class="stat"><span class="num" data-count="25" data-suffix="+">0</span>
+                        <span class="label"><span data-l="tr">Yayın, kitap &amp; bildiri</span><span data-l="en">Papers, books &amp; talks</span></span></div>
+                    <div class="stat"><span class="num" data-count="6">0</span>
+                        <span class="label"><span data-l="tr">Teknoloji şirketinde Ar-Ge</span><span data-l="en">Tech companies served</span></span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ MARQUEE ============ -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>scikit-learn</span><span>Hugging Face</span>
+                <span>LLM Agents</span><span>RAG</span><span>YOLO</span><span>ROS · Gazebo</span><span>Point Cloud</span>
+                <span>Apache Spark</span><span>Kafka</span><span>Hadoop</span><span>Redis</span><span>Zama Concrete FHE</span>
+                <span>Solidity</span><span>Java Spring Boot</span><span>React</span><span>Docker</span><span>ESP32</span>
+                <span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>scikit-learn</span><span>Hugging Face</span>
+                <span>LLM Agents</span><span>RAG</span><span>YOLO</span><span>ROS · Gazebo</span><span>Point Cloud</span>
+                <span>Apache Spark</span><span>Kafka</span><span>Hadoop</span><span>Redis</span><span>Zama Concrete FHE</span>
+                <span>Solidity</span><span>Java Spring Boot</span><span>React</span><span>Docker</span><span>ESP32</span>
             </div>
         </div>
-    </section>
-    <!-- Top Section -->
 
-    <!-- Photo -->
-    <div class="container px-5">
-        <div id="avatar">
-            <img class="shadow" src="static/assets/img/me.jpeg">
-        </div>
-    </div>
-    <!-- Photo -->
-    
-    <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
-        <div class="container px-5">
-            <header>
-                <h2 id="home-subtitle"> Tolga Buyuktanir</h2>
-                <!-- <span class="bi bi-list"></span> -->
-            </header>
-            <div class="main-body" id="home-md"></div>
-        </div>
-    </section>
-    <!-- Home -->
+        <!-- ============ SERVICES ============ -->
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="kicker"><span data-l="tr">Hizmetler</span><span data-l="en">Services</span></span>
+                    <h2><span data-l="tr">Neler yapabilirim?</span><span data-l="en">How I can help</span></h2>
+                    <p><span data-l="tr">Strateji toplantısından çalışan prototipe, hibe başvurusundan üretim
+                            ortamına kadar uçtan uca destek. Her hizmet, sahada denenmiş gerçek projelere dayanıyor.</span>
+                        <span data-l="en">End-to-end support — from strategy workshop to working prototype, from grant
+                            proposal to production. Every service is backed by real, shipped projects.</span></p>
+                </div>
 
-    <!--PhD Related Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="phd_publications">
-        <div class="container px-5">
-            <header>
-                <h2 id="phd_publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PhD RELATED PUBLICATIONS</h2>
-            </header>
-            <div class="main-body" id="phd_publications-md"></div>
-        </div>
-    </section>
+                <div class="services">
+                    <article class="service reveal">
+                        <div class="service-icon"><i class="bi bi-cpu"></i></div>
+                        <h3><span data-l="tr">AI Strateji &amp; Özel ML Modelleri</span><span data-l="en">AI Strategy &amp; Custom ML</span></h3>
+                        <p><span data-l="tr">Kullanım senaryosu analizi, veri olgunluk değerlendirmesi, model seçimi ve
+                                ölçülebilir KPI'lar. Tahmin, sınıflandırma, anomali tespiti ve zaman serisi modelleri.</span>
+                            <span data-l="en">Use-case discovery, data readiness assessment, model selection and
+                                measurable KPIs. Forecasting, classification, anomaly detection and time-series models.</span></p>
+                        <ul class="tags"><li>scikit-learn</li><li>PyTorch</li><li>XAI</li></ul>
+                    </article>
 
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="demo">
-        <div class="container px-5">
-            <header>
-                <h2 id="demo-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;DEMO</h2>
-            </header>
-            <div class="main-body" id="demo-md">
-                <iframe
-	    src="https://tbuyuktanir-crowbardemoapp.hf.space"
-	    frameborder="0"
-	    height="780"
-        frameborder="0"
-        style="width: 100%;"
-    
-        ></iframe>
+                    <article class="service reveal">
+                        <div class="service-icon"><i class="bi bi-robot"></i></div>
+                        <h3><span data-l="tr">Üretken AI, LLM Ajanları &amp; RAG</span><span data-l="en">GenAI, LLM Agents &amp; RAG</span></h3>
+                        <p><span data-l="tr">Kurumsal dokümanlarınızdan bilgi tabanı (OCR dâhil), RAG mimarileri,
+                                araç kullanan AI ajanları ve iş süreçlerine entegre asistanlar.</span>
+                            <span data-l="en">Knowledge bases from your documents (incl. OCR), RAG architectures,
+                                tool-using AI agents and assistants embedded into business workflows.</span></p>
+                        <ul class="tags"><li>Hugging Face</li><li>Agents</li><li>Vector DB</li></ul>
+                    </article>
 
+                    <article class="service reveal">
+                        <div class="service-icon"><i class="bi bi-eye"></i></div>
+                        <h3><span data-l="tr">Bilgisayarlı Görü &amp; Robotik</span><span data-l="en">Computer Vision &amp; Robotics</span></h3>
+                        <p><span data-l="tr">Nesne tespiti, RGB-D ile 6 boyutlu poz kestirimi, kutudan parça toplama
+                                (bin-picking), sentetik veri üretimi ve simülasyon tabanlı eğitim.</span>
+                            <span data-l="en">Object detection, 6-DoF pose estimation on RGB-D, robotic bin-picking,
+                                synthetic data generation and simulation-driven training.</span></p>
+                        <ul class="tags"><li>YOLO</li><li>ROS/Gazebo</li><li>ICP · TEASER</li></ul>
+                    </article>
+
+                    <article class="service reveal">
+                        <div class="service-icon"><i class="bi bi-mic"></i></div>
+                        <h3><span data-l="tr">Konuşma &amp; Doğal Dil İşleme</span><span data-l="en">Speech &amp; NLP</span></h3>
+                        <p><span data-l="tr">Türkçe konuşma tanıma, sesli komut arayüzleri, gürültü bastırma, çoklu
+                                doküman özetleme ve metin madenciliği çözümleri.</span>
+                            <span data-l="en">Turkish speech recognition, voice-command interfaces, noise suppression,
+                                multi-document summarization and text mining.</span></p>
+                        <ul class="tags"><li>ASR</li><li>Turkish NLP</li><li>Summarization</li></ul>
+                    </article>
+
+                    <article class="service reveal">
+                        <div class="service-icon"><i class="bi bi-diagram-3"></i></div>
+                        <h3><span data-l="tr">Büyük Veri &amp; Veri Mühendisliği</span><span data-l="en">Big Data &amp; Data Engineering</span></h3>
+                        <p><span data-l="tr">Akan veri işleme, veri hattı (pipeline) tasarımı, Spark/Kafka/Hadoop
+                                mimarileri, veri temizleme ve ölçeklenebilir analitik altyapılar.</span>
+                            <span data-l="en">Stream processing, data pipeline design, Spark/Kafka/Hadoop architectures,
+                                data cleaning and scalable analytics platforms.</span></p>
+                        <ul class="tags"><li>Spark</li><li>Kafka</li><li>HDFS</li></ul>
+                    </article>
+
+                    <article class="service reveal">
+                        <div class="service-icon"><i class="bi bi-shield-lock"></i></div>
+                        <h3><span data-l="tr">Gizlilik Korumalı AI &amp; Fintech</span><span data-l="en">Privacy-Preserving AI &amp; Fintech</span></h3>
+                        <p><span data-l="tr">Tam homomorfik şifreleme (FHE) ile şifreli veri üzerinde model eğitimi,
+                                çok taraflı finansal hesaplama, gömülü finans ve akıllı sözleşmeler.</span>
+                            <span data-l="en">Model training on encrypted data with fully homomorphic encryption (FHE),
+                                multi-party financial computation, embedded finance and smart contracts.</span></p>
+                        <ul class="tags"><li>Zama Concrete</li><li>Embedded Finance</li><li>Solidity</li></ul>
+                    </article>
+
+                    <article class="service reveal">
+                        <div class="service-icon"><i class="bi bi-lightning-charge"></i></div>
+                        <h3><span data-l="tr">Performans: Akıllı Önbellek &amp; Prefetching</span><span data-l="en">Performance: Smart Caching &amp; Prefetching</span></h3>
+                        <p><span data-l="tr">Doktora uzmanlığım: kullanıcı davranışını modelleyerek veriyi istenmeden
+                                önce getiren sistemler, gecikme azaltma ve RL tabanlı sürekli yük testleri.</span>
+                            <span data-l="en">My PhD specialty: systems that model user behavior to fetch data before
+                                it's requested, latency reduction and RL-driven continuous load testing.</span></p>
+                        <ul class="tags"><li>LSTM</li><li>Embeddings</li><li>Deep Q-Learning</li></ul>
+                    </article>
+
+                    <article class="service service-highlight reveal">
+                        <div class="service-icon"><i class="bi bi-award"></i></div>
+                        <h3><span data-l="tr">Ar-Ge &amp; TÜBİTAK Proje Danışmanlığı</span><span data-l="en">R&amp;D &amp; Grant Consulting</span></h3>
+                        <p><span data-l="tr">TÜBİTAK TEYDEB (1501/1507) ve ARDEB projelerinde fikir olgunlaştırma, teknik
+                                kurgu, iş paketleri, literatür ve yenilik argümanı. 8 destekli projede yer aldım.</span>
+                            <span data-l="en">Idea shaping, technical design, work packages, literature review and
+                                novelty arguments for TÜBİTAK TEYDEB and ARDEB proposals. I've contributed to 8 funded projects.</span></p>
+                        <ul class="tags"><li>TEYDEB</li><li>ARDEB</li><li>Ar-Ge Merkezi</li></ul>
+                    </article>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
-        <div class="container px-5">
-            <header>
-                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
-            </header>
-            <div class="main-body" id="publications-md"></div>
+        <!-- ============ PROCESS ============ -->
+        <section class="section section-alt" id="process">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="kicker"><span data-l="tr">Çalışma şekli</span><span data-l="en">Engagement</span></span>
+                    <h2><span data-l="tr">Nasıl çalışıyoruz?</span><span data-l="en">How we work together</span></h2>
+                </div>
+                <ol class="process">
+                    <li class="step reveal">
+                        <span class="step-num">01</span>
+                        <h3><span data-l="tr">Keşif</span><span data-l="en">Discover</span></h3>
+                        <p><span data-l="tr">Problemi, veriyi ve iş hedefini birlikte netleştiriyoruz. Ücretsiz ön görüşme.</span>
+                            <span data-l="en">We clarify the problem, the data and the business goal together. Free intro call.</span></p>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step-num">02</span>
+                        <h3><span data-l="tr">Tasarım</span><span data-l="en">Design</span></h3>
+                        <p><span data-l="tr">Mimari, başarı metrikleri, yol haritası ve gerekiyorsa hibe/proje kurgusu.</span>
+                            <span data-l="en">Architecture, success metrics, roadmap and — if relevant — a grant/project plan.</span></p>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step-num">03</span>
+                        <h3><span data-l="tr">Prototip</span><span data-l="en">Prototype</span></h3>
+                        <p><span data-l="tr">Hızlı, ölçülebilir bir PoC ile fikri gerçek veride doğruluyoruz.</span>
+                            <span data-l="en">A fast, measurable PoC validates the idea on real data.</span></p>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step-num">04</span>
+                        <h3><span data-l="tr">Üretim &amp; Transfer</span><span data-l="en">Ship &amp; Transfer</span></h3>
+                        <p><span data-l="tr">Üretime alma, dokümantasyon ve ekibinize bilgi transferi / eğitim.</span>
+                            <span data-l="en">Production rollout, documentation and knowledge transfer / training for your team.</span></p>
+                    </li>
+                </ol>
+                <div class="formats reveal">
+                    <div class="format"><i class="bi bi-clock-history"></i><span data-l="tr">Saatlik danışmanlık</span><span data-l="en">Hourly advisory</span></div>
+                    <div class="format"><i class="bi bi-box-seam"></i><span data-l="tr">Proje bazlı teslimat</span><span data-l="en">Fixed-scope projects</span></div>
+                    <div class="format"><i class="bi bi-arrow-repeat"></i><span data-l="tr">Aylık retainer / fractional CTO-AI lead</span><span data-l="en">Monthly retainer / fractional AI lead</span></div>
+                    <div class="format"><i class="bi bi-easel"></i><span data-l="tr">Kurumsal eğitim &amp; workshop</span><span data-l="en">Corporate training &amp; workshops</span></div>
+                </div>
+            </div>
+        </section>
 
-        </div>
-    </section>
-    <!-- Publications  -->
-     
+        <!-- ============ PROJECTS ============ -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="kicker"><span data-l="tr">Portfolyo</span><span data-l="en">Portfolio</span></span>
+                    <h2><span data-l="tr">Seçili projeler</span><span data-l="en">Selected projects</span></h2>
+                    <p><span data-l="tr">Endüstriyel Ar-Ge'den açık kaynağa, sahada çalışan sistemler.</span>
+                        <span data-l="en">From industrial R&amp;D to open source — systems that run in the real world.</span></p>
+                </div>
 
-    <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
-        <div class="container px-5">
-            <header>
-                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>
-            </header>
-            <div class="main-body" id="awards-md"></div>
+                <div class="filters reveal" role="tablist">
+                    <button class="filter active" data-filter="all"><span data-l="tr">Tümü</span><span data-l="en">All</span></button>
+                    <button class="filter" data-filter="ai">AI / ML</button>
+                    <button class="filter" data-filter="vision"><span data-l="tr">Görü &amp; Robotik</span><span data-l="en">Vision &amp; Robotics</span></button>
+                    <button class="filter" data-filter="speech"><span data-l="tr">Konuşma &amp; NLP</span><span data-l="en">Speech &amp; NLP</span></button>
+                    <button class="filter" data-filter="data"><span data-l="tr">Veri &amp; Performans</span><span data-l="en">Data &amp; Performance</span></button>
+                    <button class="filter" data-filter="fintech">Fintech &amp; Privacy</button>
+                    <button class="filter" data-filter="oss">Open Source</button>
+                </div>
 
-        </div>
-    </section>
-    <!-- Awards -->
+                <div class="projects">
+                    <article class="project reveal" data-cat="fintech oss ai">
+                        <div class="project-top"><span class="badge badge-oss">Open Source · PyPI</span><i class="bi bi-shield-lock"></i></div>
+                        <h3>concrete-fhe-toolkit</h3>
+                        <p><span data-l="tr">Zama Concrete için uçtan uca gizlilik korumalı ML çerçevesi: karar ağaçları,
+                                rastgele orman ve K-Means'i <strong>şifreli veri üzerinde</strong> eğitme; şifreli
+                                tamsayılar üzerinde karşılaştırma, sıralama, sin/sqrt/bölme gibi matematik.</span>
+                            <span data-l="en">An end-to-end privacy-preserving ML framework for Zama Concrete: train
+                                decision trees, random forests and K-Means <strong>on encrypted data</strong>; compare,
+                                sort and run math (sin, sqrt, division) on encrypted integers.</span></p>
+                        <ul class="tags"><li>FHE</li><li>Python</li><li>CI/CD</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/tolgabuyuktanir/concrete-fhe-toolkit" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+                            <a href="https://pypi.org/project/concrete-fhe-toolkit/" target="_blank" rel="noopener"><i class="bi bi-box"></i> PyPI</a>
+                        </div>
+                    </article>
 
+                    <article class="project reveal" data-cat="data ai oss">
+                        <div class="project-top"><span class="badge badge-phd">PhD · Live demo</span><i class="bi bi-lightning-charge"></i></div>
+                        <h3>Crowbar — <span data-l="tr">Akıllı Prefetching</span><span data-l="en">Intelligent Prefetching</span></h3>
+                        <p><span data-l="tr">Kullanıcı gezinme davranışını Node2Vec, autoencoder ve seq2seq gömmeleriyle
+                                modelleyip bir sonraki isteği tahmin eden, veriyi önceden getiren mimari. 4 dergi/konferans
+                                yayını ve açık kaynak prototip.</span>
+                            <span data-l="en">An architecture that models user navigation with Node2Vec, autoencoder and
+                                seq2seq embeddings to predict the next request and prefetch data. Backed by 4 journal/conference
+                                papers and an open-source prototype.</span></p>
+                        <ul class="tags"><li>Embeddings</li><li>LSTM</li><li>Gradio</li></ul>
+                        <div class="project-links">
+                            <a href="#demo"><i class="bi bi-play-circle"></i> Demo</a>
+                            <a href="https://github.com/tolgabuyuktanir/CrowbarDemoApp" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+                        </div>
+                    </article>
 
-    <!-- Footer-->
-    <footer class="bg-bottom text-center py-5">
-        <div class="container px-5">
-            <div class="text-white-50 small">
-                <div id="copyright-text" class="mb-2"></div>
-                <a id="github-link" href="https://github.com/tolgabuyuktanir>Github</a>
-                <span class="mx-1">&middot;</span>
-                <a id="license-link" href="https://github.com/tolgabuyuktanir/tolgabuyuktanir.github.io">License</a>
+                    <article class="project reveal" data-cat="vision ai">
+                        <div class="project-top"><span class="badge">Loodos · TÜBİTAK</span><i class="bi bi-box-seam"></i></div>
+                        <h3><span data-l="tr">Bin-Picking Robot Kolu &amp; 6D Poz Kestirimi</span><span data-l="en">Bin-Picking Robot Arm &amp; 6D Pose Estimation</span></h3>
+                        <p><span data-l="tr">Endüstri için RGB-D üzerinde 6 boyutta konum tespiti yapan yapay görme
+                                modülü. YOLOv7, Intel RealSense, nokta bulutu kaydı (CPD, ICP, TEASER) ve Redis vektör
+                                veritabanıyla şablon eşleme.</span>
+                            <span data-l="en">An industrial vision module estimating 6-DoF object pose on RGB-D data.
+                                YOLOv7, Intel RealSense, point-cloud registration (CPD, ICP, TEASER) and template matching
+                                with Redis as a vector database.</span></p>
+                        <ul class="tags"><li>YOLOv7</li><li>RealSense</li><li>Point Cloud</li></ul>
+                    </article>
+
+                    <article class="project reveal" data-cat="vision ai">
+                        <div class="project-top"><span class="badge">Loodos</span><i class="bi bi-badge-3d"></i></div>
+                        <h3><span data-l="tr">3D Modellerden Sentetik Veri Üretimi</span><span data-l="en">Synthetic Data from 3D Models</span></h3>
+                        <p><span data-l="tr">Gazebo/ROS simülasyonunda RGB-D kameralarla otomatik görüntü ve nokta bulutu
+                                üretimi; etiketleme maliyeti olmadan nesne tespiti eğitimi. UBMK 2023'te yayımlandı.</span>
+                            <span data-l="en">Automatic image and point-cloud generation with RGB-D cameras in Gazebo/ROS,
+                                training object detectors with zero labelling cost. Published at UBMK 2023.</span></p>
+                        <ul class="tags"><li>Gazebo</li><li>ROS</li><li>YOLOv4</li></ul>
+                    </article>
+
+                    <article class="project reveal" data-cat="ai vision">
+                        <div class="project-top"><span class="badge">Loodos · Embedded AI</span><i class="bi bi-scooter"></i></div>
+                        <h3><span data-l="tr">E-Scooter için AI Fren Sistemi</span><span data-l="en">AI Braking System for E-Scooters</span></h3>
+                        <p><span data-l="tr">Jiroskop, motor sürücüsü ve fren sensörlerinden toplanan veriyle eğitilen,
+                                ön freni her 10 ms'de ne kadar sıkacağına karar veren regresyon modeli. ESP32 üzerinde UART
+                                ve Bluetooth ile gerçek zamanlı çalışır.</span>
+                            <span data-l="en">A regression model trained on gyro, motor-controller and brake sensor data
+                                that decides how hard to apply the front brake every 10 ms — running in real time on an
+                                ESP32 over UART and Bluetooth.</span></p>
+                        <ul class="tags"><li>ESP32</li><li>Edge ML</li><li>Sensors</li></ul>
+                    </article>
+
+                    <article class="project reveal" data-cat="speech ai vision">
+                        <div class="project-top"><span class="badge">Loodos · TÜBİTAK</span><i class="bi bi-mic"></i></div>
+                        <h3><span data-l="tr">Türkçe Sesli Komutla Robot Kontrolü</span><span data-l="en">Turkish Voice-Controlled Cobots</span></h3>
+                        <p><span data-l="tr">Robot sistemleri için derin öğrenme destekli sesli etkileşim arayüzü: gürültü
+                                bastırma, Türkçe konuşmadan metne ve komut anlama. Sentetik ASR verisi üretimi ve sesli
+                                arama üzerine IEEE yayınları.</span>
+                            <span data-l="en">A deep-learning voice interface for robots: noise cancellation, Turkish
+                                speech-to-text and command understanding. Led to IEEE papers on synthetic ASR data and
+                                voice search.</span></p>
+                        <ul class="tags"><li>ASR</li><li>Noise Cancel</li><li>Robotics</li></ul>
+                    </article>
+
+                    <article class="project reveal" data-cat="fintech ai data">
+                        <div class="project-top"><span class="badge">Agra Fintech · TÜBİTAK</span><i class="bi bi-bank"></i></div>
+                        <h3><span data-l="tr">Gömülü Finans &amp; Veriden Habersiz Hesaplama</span><span data-l="en">Embedded Finance &amp; Data-Agnostic Computation</span></h3>
+                        <p><span data-l="tr">ERP verisinden doğan anlık olayların platform içi finans kampanyalarında
+                                kullanılması ve VEHAFİN: veriden habersiz, gizlilik korumalı, çok taraflı finansal hesaplama
+                                mimarisi.</span>
+                            <span data-l="en">Using real-time ERP events to power in-platform embedded finance campaigns,
+                                and VEHAFİN: a data-agnostic, privacy-preserving, multi-party financial computation
+                                architecture.</span></p>
+                        <ul class="tags"><li>Event Streams</li><li>MPC</li><li>Fintech</li></ul>
+                    </article>
+
+                    <article class="project reveal" data-cat="ai oss speech">
+                        <div class="project-top"><span class="badge badge-oss">Open Source</span><i class="bi bi-journal-richtext"></i></div>
+                        <h3>Knowledge Base Builder</h3>
+                        <p><span data-l="tr">PDF, EPUB, DOCX ve TXT dokümanlarını OCR ve akıllı parçalama ile özel GPT'ler ve
+                                RAG sistemleri için yapılandırılmış bilgi tabanına dönüştüren, gerçek zamanlı ilerleme
+                                gösteren React + Flask uygulaması.</span>
+                            <span data-l="en">A React + Flask app that turns PDF, EPUB, DOCX and TXT files into a
+                                structured knowledge base for custom GPTs and RAG — with OCR, smart chunking and live
+                                progress tracking.</span></p>
+                        <ul class="tags"><li>RAG</li><li>OCR</li><li>React · Flask</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/tolgabuyuktanir/CustomGPTKnowledge" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project reveal" data-cat="data ai">
+                        <div class="project-top"><span class="badge">Loodos</span><i class="bi bi-speedometer2"></i></div>
+                        <h3><span data-l="tr">RL ile Çökmesiz Sürekli Yük Testi</span><span data-l="en">Crash-free Continuous Load Testing with RL</span></h3>
+                        <p><span data-l="tr">Deep Q-Learning ile sunucuyu çökertmeden sürekli yük testi yapan mimari; sunucu
+                                yoğunluk zamanlarını bulan ve sentetik kullanıcı logu üreten araçla birlikte (SIU &amp; UBMK 2022).</span>
+                            <span data-l="en">A Deep Q-Learning architecture that load-tests continuously without crashing the
+                                server, plus a busy-time finder and synthetic user-log generator (SIU &amp; UBMK 2022).</span></p>
+                        <ul class="tags"><li>Deep Q-Learning</li><li>DevOps</li><li>Spark</li></ul>
+                    </article>
+
+                    <article class="project reveal" data-cat="ai fintech oss">
+                        <div class="project-top"><span class="badge">İdea Teknoloji</span><i class="bi bi-clipboard-data"></i></div>
+                        <h3><span data-l="tr">Bağımsız Denetim Görüşü Tahmini</span><span data-l="en">Audit Opinion Prediction</span></h3>
+                        <p><span data-l="tr">Finansal tablolardan bağımsız denetçi görüşünü makine öğrenmesiyle tahmin eden
+                                denetim aracı. Deneysel sonuçlar açık; SIU 2020'de yayımlandı.</span>
+                            <span data-l="en">An audit tool that predicts independent auditors' opinions from financial
+                                statements with machine learning. Experimental results are public; published at SIU 2020.</span></p>
+                        <ul class="tags"><li>Supervised ML</li><li>Finance</li><li>Java · Python</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/tolgabuyuktanir/AuditOpinionPredictionExperimentalResults" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project reveal" data-cat="speech ai">
+                        <div class="project-top"><span class="badge">İdea Teknoloji · TÜBİTAK</span><i class="bi bi-file-earmark-text"></i></div>
+                        <h3><span data-l="tr">Çoklu Doküman Özetleme &amp; DETAY</span><span data-l="en">Multi-Document Summarization &amp; DETAY</span></h3>
+                        <p><span data-l="tr">Derlem temelli arama yardımcısı (DETAY) ve çoklu doküman özetleme; akan veri
+                                işleme ve veri kazıma ile beslenen NLP hattı. Ayrıca genomik veri için varyant
+                                önceliklendirme aracı VARSKOR'da görev aldım.</span>
+                            <span data-l="en">A corpus-based search assistant (DETAY) and multi-document summarization fed by
+                                stream processing and scraping. I also worked on VARSKOR, a variant prioritization tool for
+                                genomic data.</span></p>
+                        <ul class="tags"><li>NLP</li><li>Stream Processing</li><li>Spring Boot</li></ul>
+                    </article>
+
+                    <article class="project reveal" data-cat="data oss">
+                        <div class="project-top"><span class="badge badge-oss">Open Source · Paper</span><i class="bi bi-bar-chart-steps"></i></div>
+                        <h3><span data-l="tr">Büyük Veri için Eş-Derinlikli Histogram</span><span data-l="en">Equi-Depth Histograms for Big Data</span></h3>
+                        <p><span data-l="tr">Kalite garantili, birleştirme tabanlı histogram hesaplama; Hadoop/MapReduce
+                                üzerinde uygulama ve demo. Yüksek lisans tezi, arXiv ve Politeknik Dergisi.</span>
+                            <span data-l="en">Merge-based histogram computation with quality guarantees, implemented on
+                                Hadoop/MapReduce with a demo. MSc thesis, arXiv and Journal of Polytechnic.</span></p>
+                        <ul class="tags"><li>Hadoop</li><li>MapReduce</li><li>Java</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/tolgabuyuktanir/Equi-DepthHistogramConstructionForBigDataWithQualityQuaranties" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+                            <a href="https://arxiv.org/abs/1606.05633" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> arXiv</a>
+                        </div>
+                    </article>
+
+                    <article class="project reveal" data-cat="data oss">
+                        <div class="project-top"><span class="badge">Link Bilgisayar · Huawei</span><i class="bi bi-hdd-stack"></i></div>
+                        <h3><span data-l="tr">Konteyner Kaynak Yönetimi &amp; Veri Hatları</span><span data-l="en">Container Resource Mgmt &amp; Data Pipelines</span></h3>
+                        <p><span data-l="tr">Uygulama sanallaştırma ortamları için dinamik bellek/kaynak tahsisi (UBMK 2018,
+                                IGI Global), Kafka'dan HDFS'e Gobblin veri hattı, CloudERP ve Huawei CloudSearch.</span>
+                            <span data-l="en">Dynamic memory/resource allocation for application virtualization (UBMK 2018,
+                                IGI Global), a Gobblin pipeline from Kafka to HDFS, CloudERP and Huawei CloudSearch.</span></p>
+                        <ul class="tags"><li>Docker</li><li>Kafka</li><li>Gobblin</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/tolgabuyuktanir/DockerDynamicResourceAllocation" target="_blank" rel="noopener"><i class="bi bi-github"></i> Docker</a>
+                            <a href="https://github.com/tolgabuyuktanir/GobblinKafkaToHDFS" target="_blank" rel="noopener"><i class="bi bi-github"></i> Gobblin</a>
+                        </div>
+                    </article>
+
+                    <article class="project reveal" data-cat="ai oss">
+                        <div class="project-top"><span class="badge badge-oss">Hugging Face</span><i class="bi bi-stars"></i></div>
+                        <h3>AI Agents — HF Agents Course</h3>
+                        <p><span data-l="tr">Hugging Face Agents kursunun final projesi: araç kullanan, çok adımlı akıl
+                                yürüten bir AI ajanı. Hugging Face Agents ve AI Agents Fundamentals sertifikaları (2025).</span>
+                            <span data-l="en">Final assignment of the Hugging Face Agents Course: a tool-using, multi-step
+                                reasoning AI agent. Hugging Face Agents and AI Agents Fundamentals certificates (2025).</span></p>
+                        <ul class="tags"><li>smolagents</li><li>LLM</li><li>Tools</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/tolgabuyuktanir/HF_AgentCourse_Final_Assignment" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project reveal" data-cat="vision ai">
+                        <div class="project-top"><span class="badge">Loodos · Frink</span><i class="bi bi-person-bounding-box"></i></div>
+                        <h3><span data-l="tr">Profil Fotoğrafı Uygunluk Servisi &amp; Anomali Tespiti</span><span data-l="en">Profile Photo Moderation &amp; Anomaly Detection</span></h3>
+                        <p><span data-l="tr">Frink mobil uygulaması için profil fotoğraflarının uygunluğunu otomatik
+                                denetleyen görü servisi ve üretim sistemleri için anomali tespit aracı.</span>
+                            <span data-l="en">A vision service that automatically checks profile photo suitability for the
+                                Frink mobile app, plus an anomaly detection tool for production systems.</span></p>
+                        <ul class="tags"><li>CV</li><li>Moderation</li><li>Anomaly</li></ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ DEMO ============ -->
+        <section class="section section-alt" id="demo">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="kicker"><span data-l="tr">Canlı Demo</span><span data-l="en">Live Demo</span></span>
+                    <h2><span data-l="tr">Kullanıcı davranışı vektörlerini deneyin</span><span data-l="en">Try user-behavior embeddings</span></h2>
+                    <p><span data-l="tr">Doktora çalışmamdaki prefetching modellerinin Hugging Face üzerinde çalışan demosu.</span>
+                        <span data-l="en">A live Hugging Face demo of the prefetching models from my PhD research.</span></p>
+                </div>
+                <div class="demo-frame reveal" id="demoFrame">
+                    <button class="demo-load" id="demoLoad" type="button">
+                        <i class="bi bi-play-circle-fill"></i>
+                        <span data-l="tr">Demoyu yükle</span><span data-l="en">Load demo</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ ABOUT ============ -->
+        <section class="section" id="about">
+            <div class="container about">
+                <div class="about-copy reveal">
+                    <span class="kicker"><span data-l="tr">Hakkımda</span><span data-l="en">About</span></span>
+                    <h2><span data-l="tr">Akademik derinlik, endüstriyel hız.</span><span data-l="en">Academic depth, industry speed.</span></h2>
+                    <p><span data-l="tr">Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği'nde doktoramı (2025)
+                            veri yoğun web ve mobil uygulamalarda akıllı önbellekleme ve prefetching üzerine tamamladım.
+                            Yüksek lisansımı Ankara Yıldırım Beyazıt Üniversitesi'nde büyük veri, lisansımı Erciyes
+                            Üniversitesi'nde yaptım.</span>
+                        <span data-l="en">I earned my PhD (2025) in Computer Engineering at Yıldız Technical University,
+                            focusing on smart caching and prefetching for data-intensive web and mobile apps. I hold an
+                            MSc on big data from Ankara Yıldırım Beyazıt University and a BSc from Erciyes University.</span></p>
+                    <p><span data-l="tr">Huawei, Link Bilgisayar, İdea Teknoloji ve Loodos Ar-Ge Merkezi'nden sonra bugün
+                            Agra Fintech'te Ar-Ge Müdürü olarak finansal inovasyon projelerini yönetiyorum. Robot kollarından
+                            e-scooter frenlerine, Türkçe konuşma tanımadan şifreli veri üzerinde makine öğrenmesine kadar
+                            geniş bir yelpazede ürün çıkardım.</span>
+                        <span data-l="en">After Huawei, Link Bilgisayar, İdea Technology and Loodos R&amp;D Center, I now
+                            lead financial innovation as R&amp;D Manager at Agra Fintech. I've shipped everything from robot
+                            arms and e-scooter brakes to Turkish speech recognition and machine learning on encrypted data.</span></p>
+                    <p><span data-l="tr">Danışmanlıkta amacım basit: araştırma kalitesinde düşünüp mühendislik hızında
+                            teslim etmek — ve ekibinizi kendi başına devam edebilecek hale getirmek.</span>
+                        <span data-l="en">My consulting goal is simple: think with research rigor, deliver at engineering
+                            speed — and leave your team able to carry on without me.</span></p>
+                </div>
+                <div class="about-side reveal">
+                    <div class="edu">
+                        <div class="edu-item">
+                            <i class="bi bi-mortarboard"></i>
+                            <div><strong>PhD, Computer Engineering</strong><span>Yıldız Technical University · 2018–2025</span></div>
+                        </div>
+                        <div class="edu-item">
+                            <i class="bi bi-mortarboard"></i>
+                            <div><strong>MSc, Computer Engineering (Big Data)</strong><span>Ankara Yıldırım Beyazıt Univ. · 2014–2017</span></div>
+                        </div>
+                        <div class="edu-item">
+                            <i class="bi bi-mortarboard"></i>
+                            <div><strong>BSc, Computer Engineering</strong><span>Erciyes University · 2009–2014</span></div>
+                        </div>
+                    </div>
+                    <div class="awards">
+                        <h3><i class="bi bi-trophy"></i> <span data-l="tr">Ödüller &amp; Sertifikalar</span><span data-l="en">Awards &amp; Certificates</span></h3>
+                        <ul>
+                            <li><strong>UBMK'22</strong> <span data-l="tr">En İyi Bildiri Ödülü (2.)</span><span data-l="en">Best Paper Award (2nd place)</span></li>
+                            <li><strong>YÖK 100/2000</strong> <span data-l="tr">Doktora Bursu</span><span data-l="en">PhD Scholarship</span></li>
+                            <li><strong>TÜBİTAK 2224-B</strong> <span data-l="tr">Bilimsel etkinlik desteği (2025)</span><span data-l="en">Scientific event grant (2025)</span></li>
+                            <li>Hugging Face Agents Course · AI Agents Fundamentals (2025)</li>
+                            <li>Paribu Blockchain Developer (2021)</li>
+                            <li>IBM Big Data University — Hadoop, Apache Kafka</li>
+                            <li>Yonsei Univ. — Big Data, Cloud Computing &amp; CDN</li>
+                        </ul>
+                    </div>
+                    <div class="langs">
+                        <span><span data-l="tr">Türkçe — ana dil</span><span data-l="en">Turkish — native</span></span>
+                        <span><span data-l="tr">İngilizce — C1</span><span data-l="en">English — C1</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EXPERIENCE ============ -->
+        <section class="section section-alt" id="experience">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="kicker"><span data-l="tr">Deneyim</span><span data-l="en">Experience</span></span>
+                    <h2><span data-l="tr">Kariyer yolculuğu</span><span data-l="en">Career journey</span></h2>
+                </div>
+                <div class="timeline">
+                    <div class="tl-item reveal">
+                        <span class="tl-date">2024 — <span data-l="tr">Bugün</span><span data-l="en">Now</span></span>
+                        <h3><span data-l="tr">Ar-Ge Müdürü</span><span data-l="en">R&amp;D Manager</span> · Agra Fintech</h3>
+                        <p><span data-l="tr">Finansal inovasyon projelerini yönetiyorum: gömülü finans, ERP olay akışları ve
+                                gizlilik korumalı çok taraflı hesaplama (2 TÜBİTAK TEYDEB projesi).</span>
+                            <span data-l="en">Leading financial innovation: embedded finance, ERP event streams and
+                                privacy-preserving multi-party computation (2 TÜBİTAK TEYDEB projects).</span></p>
+                    </div>
+                    <div class="tl-item reveal">
+                        <span class="tl-date">2020 — 2024</span>
+                        <h3><span data-l="tr">Ar-Ge Teknik Lideri</span><span data-l="en">R&amp;D Technical Lead</span> · Loodos R&amp;D Center</h3>
+                        <p><span data-l="tr">Bin-picking robot, 6D poz kestirimi, sesli komutla robot kontrolü, e-scooter AI
+                                fren sistemi, akıllı önbellek ve RL tabanlı yük testi projelerine liderlik.</span>
+                            <span data-l="en">Led bin-picking robotics, 6D pose estimation, voice-controlled robots, an AI
+                                braking system for e-scooters, smart caching and RL-based load testing.</span></p>
+                    </div>
+                    <div class="tl-item reveal">
+                        <span class="tl-date">2018 — 2020</span>
+                        <h3><span data-l="tr">Ar-Ge Mühendisi</span><span data-l="en">R&amp;D Engineer</span> · İdea Teknoloji</h3>
+                        <p><span data-l="tr">Zaman serisi analizi, NLP, çoklu doküman özetleme, akan veri işleme; bağımsız
+                                denetim aracı, DETAY ve VARSKOR projeleri.</span>
+                            <span data-l="en">Time-series analysis, NLP, multi-document summarization, stream processing;
+                                the independent audit tool, DETAY and VARSKOR projects.</span></p>
+                    </div>
+                    <div class="tl-item reveal">
+                        <span class="tl-date">2018</span>
+                        <h3><span data-l="tr">Ar-Ge Mühendisi</span><span data-l="en">R&amp;D Engineer</span> · Huawei Turkey R&amp;D · Link Bilgisayar</h3>
+                        <p><span data-l="tr">CloudSearch (Huawei); hafif sanallaştırma yönetimi, Kafka/Gobblin/Spark
+                                büyük veri hatları ve TEYDEB proje yazımı (Link).</span>
+                            <span data-l="en">CloudSearch (Huawei); lightweight virtualization management,
+                                Kafka/Gobblin/Spark pipelines and TEYDEB proposal writing (Link).</span></p>
+                    </div>
+                    <div class="tl-item reveal">
+                        <span class="tl-date">2014 — 2017</span>
+                        <h3><span data-l="tr">Araştırma Görevlisi &amp; Freelance Geliştirici</span><span data-l="en">Research Assistant &amp; Freelance Developer</span></h3>
+                        <p><span data-l="tr">Turgut Özal Üniversitesi'nde Hadoop ekosistemi üzerine araştırma ve programlama /
+                                IoT derslerinin asistanlığı; ardından freelance büyük veri, Java ve IoT geliştirme. 2017–2018
+                                Hava Kuvvetleri'nde yedek subay.</span>
+                            <span data-l="en">Hadoop ecosystem research and TA for programming / IoT courses at Turgut Özal
+                                University; then freelance big data, Java and IoT development. Reserve officer in the
+                                Turkish Air Force, 2017–2018.</span></p>
+                    </div>
+                </div>
+
+                <div class="grants reveal">
+                    <h3><i class="bi bi-patch-check"></i> <span data-l="tr">TÜBİTAK destekli projeler</span><span data-l="en">TÜBİTAK-funded projects</span></h3>
+                    <ul class="grant-list">
+                        <li><span class="g-year">2026–27</span><span><strong>VEHAFİN</strong> — <span data-l="tr">Veriden habersiz, gizlilik korumalı, çok taraflı finansal hesaplama mimarisi</span><span data-l="en">Data-agnostic, privacy-preserving multi-party financial computation</span></span><span class="g-tag">TEYDEB</span></li>
+                        <li><span class="g-year">2025–27</span><span><span data-l="tr">ERP verisinden doğan anlık olayların gömülü finans kampanyalarında kullanılması</span><span data-l="en">Real-time ERP events for embedded finance campaigns</span></span><span class="g-tag">TEYDEB</span></li>
+                        <li><span class="g-year">2022–24</span><span><span data-l="tr">Endüstriye yönelik, RGB-D üzerinde 6 boyutta konum tespiti yapan yapay görme modülü</span><span data-l="en">Industrial 6-DoF pose estimation vision module on RGB-D</span></span><span class="g-tag">TEYDEB</span></li>
+                        <li><span class="g-year">2022–23</span><span><span data-l="tr">Robot sistemleri için derin öğrenme destekli sesli etkileşim arayüzü</span><span data-l="en">Deep-learning voice interaction interface for robots</span></span><span class="g-tag">TEYDEB</span></li>
+                        <li><span class="g-year">2021–25</span><span><span data-l="tr">HPV ve Influenza enfeksiyonlarına karşı tanı kiti, ilaç ve aşı geliştirme</span><span data-l="en">Diagnostics, drugs and vaccines against HPV and Influenza</span></span><span class="g-tag">ARDEB 1004</span></li>
+                        <li><span class="g-year">2020–22</span><span><strong>PASSER</strong> — <span data-l="tr">Uç etmenlere dayalı öğrenen e-belge mikroservis mimarisi</span><span data-l="en">Learning e-document microservice architecture on edge agents</span></span><span class="g-tag">TEYDEB</span></li>
+                        <li><span class="g-year">2019–21</span><span><strong>VARSKOR</strong> — <span data-l="tr">Genomik veri için varyant önceliklendirme ve skorlama aracı</span><span data-l="en">Variant prioritization and scoring for genomic data</span></span><span class="g-tag">TEYDEB</span></li>
+                        <li><span class="g-year">2019–21</span><span><strong>DETAY</strong> — <span data-l="tr">Derlem temelli arama yardımcısı</span><span data-l="en">Corpus-based search assistant</span></span><span class="g-tag">TEYDEB</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ RESEARCH ============ -->
+        <section class="section" id="research">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="kicker"><span data-l="tr">Araştırma</span><span data-l="en">Research</span></span>
+                    <h2><span data-l="tr">Yayınlar</span><span data-l="en">Publications</span></h2>
+                    <p><span data-l="tr">Hakemli dergiler, IEEE konferansları ve kitaplar. Güncel liste ve atıflar için</span>
+                        <span data-l="en">Peer-reviewed journals, IEEE conferences and books. For the latest list and citations see</span>
+                        <a href="https://scholar.google.com/citations?user=D2Md-J4AAAAJ" target="_blank" rel="noopener">Google Scholar <i class="bi bi-box-arrow-up-right"></i></a>.</p>
+                </div>
+
+                <div class="filters reveal" id="pubFilters">
+                    <button class="filter active" data-pub="all"><span data-l="tr">Tümü</span><span data-l="en">All</span></button>
+                    <button class="filter" data-pub="phd"><span data-l="tr">Doktora</span><span data-l="en">PhD</span></button>
+                    <button class="filter" data-pub="journal"><span data-l="tr">Dergi</span><span data-l="en">Journal</span></button>
+                    <button class="filter" data-pub="conf"><span data-l="tr">Konferans</span><span data-l="en">Conference</span></button>
+                    <button class="filter" data-pub="book"><span data-l="tr">Kitap</span><span data-l="en">Book</span></button>
+                </div>
+
+                <ol class="pubs" id="pubs">
+                    <li class="pub" data-type="journal phd"><span class="pub-year">2025</span><div><a class="pub-title" href="https://onlinelibrary.wiley.com/journal/15320634" target="_blank" rel="noopener">On the Use of Embedding Techniques for Modeling User Navigational Behavior in Intelligent Prefetching Strategies</a><span class="pub-meta">T. Büyüktanır, M. S. Aktaş · <em>Concurrency and Computation: Practice and Experience</em>, 37(3), e8356 · Wiley</span></div></li>
+                    <li class="pub" data-type="journal phd"><span class="pub-year">2024</span><div><a class="pub-title" href="https://www.worldscientific.com/doi/10.1142/S0218194024500384" target="_blank" rel="noopener">Predictive Prefetching in Client-Server Systems: A Navigational Behavior Modeling Approach</a><span class="pub-meta">T. Büyüktanır, M. S. Aktaş · <em>Int. J. of Software Engineering and Knowledge Engineering</em>, 34(11)</span></div></li>
+                    <li class="pub" data-type="conf"><span class="pub-year">2024</span><div><span class="pub-title">Synthetic Data Generation Method for Turkish Automatic Speech Recognition Systems</span><span class="pub-meta">H. Tekgöz, H. Uz, M. M. Özbek, T. Büyüktanır · <em>9th Int. Conf. on Computer Science and Engineering (UBMK)</em>, IEEE, pp. 355–359</span></div></li>
+                    <li class="pub" data-type="conf"><span class="pub-year">2024</span><div><span class="pub-title">Turkish Speech Recognition for Voice Search Applications</span><span class="pub-meta">H. Tekgöz, M. M. Özbek, T. Büyüktanır, H. Uz · <em>32nd Signal Processing and Communications Applications Conf. (SIU)</em>, IEEE</span></div></li>
+                    <li class="pub" data-type="journal phd"><span class="pub-year">2023</span><div><a class="pub-title" href="https://www.worldscientific.com/doi/abs/10.1142/S0218194023500365" target="_blank" rel="noopener">Enhancing Accessibility to Data in Data-Intensive Web Applications by Using Intelligent Web Prefetching Methodologies</a><span class="pub-meta">T. Büyüktanır, İ. O. Sığırcı, M. S. Aktaş · <em>IJSEKE</em>, 33(09), pp. 1405–1438</span></div></li>
+                    <li class="pub" data-type="journal"><span class="pub-year">2023</span><div><span class="pub-title">du-CBA: Data-agnostic and Incremental Classification-based Association Rules Extraction Architecture</span><span class="pub-meta">B. Büyüktanır, K. Yıldız, E. E. Ülkü, T. Büyüktanır · <em>J. of the Faculty of Engineering and Architecture of Gazi University</em>, 38(3), pp. 1919–1930</span></div></li>
+                    <li class="pub" data-type="conf"><span class="pub-year">2023</span><div><span class="pub-title">Controlling Collaborative Robots in Factory Environments with Turkish Voice Commands</span><span class="pub-meta">T. Büyüktanır, H. Uz, B. Erbay, A. Alptekin, F. Özdemir, A. Karaağaç · <em>8th UBMK</em>, IEEE, pp. 191–194</span></div></li>
+                    <li class="pub" data-type="conf"><span class="pub-year">2023</span><div><span class="pub-title">Automatic Dataset Generation from 3D Object Models for Object Detection Applications</span><span class="pub-meta">T. Büyüktanır, H. Uz, B. Erbay, A. Alptekin, F. Özdemir, A. Karaağaç · <em>8th UBMK</em>, IEEE</span></div></li>
+                    <li class="pub" data-type="conf phd"><span class="pub-year">2022</span><div><a class="pub-title" href="https://ieeexplore.ieee.org/document/10020591" target="_blank" rel="noopener">A Deep Learning-based Prefetching Approach to Enable Scalability for Data-intensive Applications</a><span class="pub-meta">T. Büyüktanır, M. S. Aktaş · <em>IEEE Int. Conf. on Big Data (Big Data)</em>, pp. 2716–2721</span></div></li>
+                    <li class="pub" data-type="conf phd"><span class="pub-year">2022</span><div><a class="pub-title" href="https://link.springer.com/chapter/10.1007/978-3-031-10545-6_6" target="_blank" rel="noopener">Mobile Prefetching and Web Prefetching: A Systematic Literature Review</a><span class="pub-meta">T. Büyüktanır, M. S. Aktaş · <em>ICCSA 2022</em>, Springer LNCS, pp. 75–89</span></div></li>
+                    <li class="pub" data-type="conf"><span class="pub-year">2022</span><div><span class="pub-title">Server Busy Times Finder and Synthetic User Log Generator On-Demand Architecture</span><span class="pub-meta">B. Erbay, T. Büyüktanır, M. Altun, H. Uz · <em>7th UBMK</em>, IEEE, pp. 317–320</span></div></li>
+                    <li class="pub" data-type="conf"><span class="pub-year">2022</span><div><span class="pub-title">Reinforcement Learning-Driven Continuous and Crashless Load Test Architecture</span><span class="pub-meta">T. Büyüktanır, B. Erbay, M. Altun · <em>30th SIU</em>, IEEE</span></div></li>
+                    <li class="pub" data-type="journal"><span class="pub-year">2020</span><div><span class="pub-title">Equi-Depth Histogram Construction Methodology for Big Data Tools</span><span class="pub-meta">T. Büyüktanır, A. E. Topcu · <em>Journal of Polytechnic (Politeknik Dergisi)</em>, 23(3), pp. 859–865</span></div></li>
+                    <li class="pub" data-type="conf"><span class="pub-year">2020</span><div><span class="pub-title">Auditor's Opinions Prediction with Machine Learning Algorithms</span><span class="pub-meta">T. Büyüktanır, T. Toraman · <em>28th SIU</em>, IEEE</span></div></li>
+                    <li class="pub" data-type="conf"><span class="pub-year">2020</span><div><span class="pub-title">Design and Verification of Cargo Management Processes Using Microservice-Based Software Architecture: A Case Study</span><span class="pub-meta">T. Büyüktanır, H. K. May, C. Şebboy, D. Yalçın, M. S. Aktaş · <em>ICAIAME 2020</em></span></div></li>
+                    <li class="pub" data-type="conf"><span class="pub-year">2020</span><div><span class="pub-title">Sıralı Kural Madenciliği Kullanarak Akıllı Önbelleğe Alma Tekniklerine Zamana Duyarlı Yeni Bir Yaklaşım</span><span class="pub-meta">T. Büyüktanır, İ. O. Sığırcı, M. S. Aktaş · <em>Başarım 2020</em></span></div></li>
+                    <li class="pub" data-type="book"><span class="pub-year">2019</span><div><span class="pub-title">Provisioning System for Application Virtualization Environments</span><span class="pub-meta">M. S. Aktaş, H. Tüzün, T. Büyüktanır · <em>Big Data Analytics for Sustainable Computing</em>, IGI Global, pp. 131–145 (book chapter)</span></div></li>
+                    <li class="pub" data-type="conf"><span class="pub-year">2018</span><div><span class="pub-title">Provisioning System for Application Virtualization Environments</span><span class="pub-meta">T. Büyüktanır, H. Tüzün, M. S. Aktaş · <em>3rd UBMK</em>, IEEE</span></div></li>
+                    <li class="pub" data-type="book"><span class="pub-year">2017</span><div><span class="pub-title">Nesnelerin İnterneti</span><span class="pub-meta">B. Büyüktanır, T. Büyüktanır · Kodlab Yayın · ISBN 978-605-9118-82-8</span></div></li>
+                    <li class="pub" data-type="conf"><span class="pub-year">2017</span><div><span class="pub-title">Büyük Veriler için Eş-Derinlikli Histogram Oluşturma Metodolojisi</span><span class="pub-meta">T. Büyüktanır, A. E. Topcu · <em>1. Ulusal Bulut Bilişim ve Büyük Veri Sempozyumu</em></span></div></li>
+                    <li class="pub" data-type="book"><span class="pub-year">2016</span><div><span class="pub-title">C++ ile Projeler</span><span class="pub-meta">T. Büyüktanır, Y. Yalman · Kodlab Yayın · ISBN 978-605-9118-70-5</span></div></li>
+                    <li class="pub" data-type="journal"><span class="pub-year">2016</span><div><a class="pub-title" href="https://arxiv.org/abs/1606.05633" target="_blank" rel="noopener">Equi-depth Histogram Construction for Big Data with Quality Guarantees</a><span class="pub-meta">B. Yıldız, T. Büyüktanır, F. Emekci · <em>arXiv:1606.05633</em> (preprint)</span></div></li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="contact reveal">
+                    <div class="contact-copy">
+                        <span class="kicker"><span data-l="tr">İletişim</span><span data-l="en">Contact</span></span>
+                        <h2><span data-l="tr">Bir fikriniz mi var? Konuşalım.</span><span data-l="en">Have an idea? Let's talk.</span></h2>
+                        <p><span data-l="tr">Projenizi birkaç cümleyle anlatın; 30 dakikalık ücretsiz bir ön görüşmede
+                                yapılabilirliği, yaklaşık takvimi ve en hızlı değer üretecek ilk adımı birlikte belirleyelim.</span>
+                            <span data-l="en">Describe your project in a few sentences; in a free 30-minute intro call we'll
+                                assess feasibility, rough timeline and the first step that delivers value fastest.</span></p>
+                        <ul class="contact-list">
+                            <li><i class="bi bi-envelope"></i><a href="mailto:tolgabuyuktanir@gmail.com">tolgabuyuktanir@gmail.com</a></li>
+                            <li><i class="bi bi-linkedin"></i><a href="https://www.linkedin.com/in/tolga-buyuktanir-6b63733a/" target="_blank" rel="noopener">LinkedIn</a></li>
+                            <li><i class="bi bi-geo-alt"></i><span data-l="tr">İstanbul · Uzaktan / yerinde</span><span data-l="en">Istanbul · Remote / on-site</span></li>
+                        </ul>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <label><span data-l="tr">Adınız</span><span data-l="en">Your name</span>
+                            <input type="text" name="name" required autocomplete="name" /></label>
+                        <label><span data-l="tr">Şirket</span><span data-l="en">Company</span>
+                            <input type="text" name="company" autocomplete="organization" /></label>
+                        <label><span data-l="tr">İlgilendiğiniz alan</span><span data-l="en">Area of interest</span>
+                            <select name="topic">
+                                <option>AI / ML</option>
+                                <option>GenAI · LLM Agents · RAG</option>
+                                <option>Computer Vision · Robotics</option>
+                                <option>Speech · NLP</option>
+                                <option>Big Data · Data Engineering</option>
+                                <option>Privacy-Preserving AI · Fintech</option>
+                                <option>TÜBİTAK / R&amp;D</option>
+                                <option>Training · Workshop</option>
+                            </select></label>
+                        <label><span data-l="tr">Projenizi anlatın</span><span data-l="en">Tell me about your project</span>
+                            <textarea name="message" rows="4" required></textarea></label>
+                        <button type="submit" class="btn btn-primary">
+                            <span data-l="tr">E-posta ile gönder</span><span data-l="en">Send via email</span> <i class="bi bi-send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span>&copy; <span id="year">2026</span> Tolga Büyüktanır</span>
+            <div class="footer-links">
+                <a href="https://github.com/tolgabuyuktanir" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/tolga-buyuktanir-6b63733a/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://scholar.google.com/citations?user=D2Md-J4AAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
+                <a href="https://www.youtube.com/@tolgabuyuktanir" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                <a href="https://x.com/tolgabuyuktanir" target="_blank" rel="noopener" aria-label="X"><i class="bi bi-twitter-x"></i></a>
             </div>
         </div>
     </footer>
 
+    <script src="static/js/site.js"></script>
 </body>
 
 </html>
