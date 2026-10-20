@@ -586,3 +586,8 @@ a.pub-title::after { content: " ↗"; color: var(--primary); font-size: .85em; }
     .spot-stack .spot-copy > .spot-actions { grid-row: 5; }
     .spot-stack .spot-copy > .spot-features { grid-row: 1 / -1; }
 }
+
+/* ---------- footer contact ---------- */
+.footer-contact { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
+.footer-contact a { color: var(--text-2); }
+.footer-contact a:hover { color: var(--primary); }

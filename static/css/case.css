@@ -40,3 +40,6 @@
 .shots .wide { grid-column: 1 / -1; }
 .shots img { background: #fff; }
 .shots img { cursor: zoom-in; }
+.case-cta .btn { margin: 0 8px 8px 0; }
+.case-contact { margin: 10px 0 0 !important; font-size: 14px; color: var(--muted); }
+.case-contact a { color: var(--text-2); }
