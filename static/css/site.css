@@ -591,3 +591,19 @@ a.pub-title::after { content: " ↗"; color: var(--primary); font-size: .85em; }
 .footer-contact { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
 .footer-contact a { color: var(--text-2); }
 .footer-contact a:hover { color: var(--primary); }
+
+/* ---------- contact drafts ---------- */
+.drafts { display: flex; flex-direction: column; gap: 8px; }
+.drafts-label { font-size: 13px; color: var(--text-2); font-weight: 500; }
+.draft-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.draft-chip {
+    display: inline-flex; align-items: center; gap: 7px; padding: 7px 12px; border-radius: 999px;
+    border: 1px solid var(--border-strong); background: var(--surface); color: var(--text-2);
+    font: 500 13px var(--font-body); cursor: pointer; transition: all .2s;
+}
+.draft-chip i { color: var(--primary); }
+.draft-chip:hover { border-color: var(--primary-line); background: var(--primary-soft); color: var(--primary-ink); }
+.draft-chip.active { border-color: var(--primary); background: var(--primary-soft); color: var(--primary-ink); }
+.send-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 4px; }
+.send-row .btn { justify-content: center; }
+@media (max-width: 640px) { .send-row { grid-template-columns: 1fr; } }

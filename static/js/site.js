@@ -194,12 +194,37 @@
         document.getElementById('demoFrame').replaceChildren(frame);
     });
 
-    // ---------- contact form -> mailto ----------
+    // ---------- contact drafts ----------
+    const messageBox = document.getElementById('messageBox');
+    const topicSelect = document.getElementById('topicSelect');
+    const chips = document.querySelectorAll('.draft-chip');
+    chips.forEach(chip => chip.addEventListener('click', () => {
+        chips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        const text = chip.dataset[root.lang === 'en' ? 'en' : 'tr'];
+        messageBox.value = text;
+        const opt = topicSelect.querySelector(`option[data-key="${chip.dataset.topic}"]`);
+        if (opt) opt.selected = true;
+        // select the first [placeholder] so the visitor can type over it
+        messageBox.focus();
+        const start = text.indexOf('[');
+        const end = text.indexOf(']', start);
+        if (start >= 0 && end > start) messageBox.setSelectionRange(start, end + 1);
+    }));
+
+    // ---------- contact form -> email or WhatsApp draft ----------
     document.getElementById('contactForm').addEventListener('submit', e => {
         e.preventDefault();
         const d = new FormData(e.target);
+        const sign = `— ${d.get('name')}${d.get('company') ? ' / ' + d.get('company') : ''}`;
+        const channel = e.submitter && e.submitter.dataset.channel;
+        if (channel === 'whatsapp') {
+            const text = `${d.get('message')}\n\n${sign}`;
+            window.open('https://wa.me/905546442494?text=' + encodeURIComponent(text), '_blank', 'noopener');
+            return;
+        }
         const subject = `[tolgabuyuktanir.github.io] ${d.get('topic')} — ${d.get('name')}${d.get('company') ? ' / ' + d.get('company') : ''}`;
-        const body = `${d.get('message')}\n\n— ${d.get('name')}${d.get('company') ? '\n' + d.get('company') : ''}`;
+        const body = `${d.get('message')}\n\n${sign}`;
         location.href = 'mailto:tolgabuyuktanir@gmail.com?subject=' + encodeURIComponent(subject) +
             '&body=' + encodeURIComponent(body);
     });

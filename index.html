@@ -877,7 +877,7 @@
                         <ul class="contact-list">
                             <li><i class="bi bi-envelope"></i><a href="mailto:tolgabuyuktanir@gmail.com">tolgabuyuktanir@gmail.com</a></li>
                             <li><i class="bi bi-telephone"></i><a href="tel:+905546442494">+90 554 644 24 94</a></li>
-                            <li><i class="bi bi-whatsapp"></i><a href="https://wa.me/905546442494" target="_blank" rel="noopener">WhatsApp <span data-l="tr">üzerinden yazın</span><span data-l="en">message</span></a></li>
+                            <li><i class="bi bi-whatsapp"></i><a href="https://wa.me/905546442494?text=Merhaba%20Tolga%2C%20web%20sitenden%20ula%C5%9F%C4%B1yorum." target="_blank" rel="noopener">WhatsApp <span data-l="tr">üzerinden yazın</span><span data-l="en">message</span></a></li>
                             <li><i class="bi bi-linkedin"></i><a href="https://www.linkedin.com/in/tolga-buyuktanir-ph-d-6b63733a/" target="_blank" rel="noopener">LinkedIn</a></li>
                             <li><i class="bi bi-geo-alt"></i><span data-l="tr">İstanbul · Uzaktan / yerinde</span><span data-l="en">Istanbul · Remote / on-site</span></li>
                         </ul>
@@ -888,23 +888,36 @@
                         <label><span data-l="tr">Şirket</span><span data-l="en">Company</span>
                             <input type="text" name="company" autocomplete="organization" /></label>
                         <label><span data-l="tr">Konu</span><span data-l="en">Topic</span>
-                            <select name="topic">
-                                <option>Yazılım mimarisi / Software architecture</option>
-                                <option>Yapay zekâ &amp; ürün entegrasyonu / AI &amp; product integration</option>
-                                <option>GenAI · LLM · RAG</option>
-                                <option>Bilgisayarlı görü / Computer vision</option>
-                                <option>Konuşma · NLP / Speech · NLP</option>
-                                <option>Veri mühendisliği / Data engineering</option>
-                                <option>Fintech · Gizlilik / Privacy</option>
-                                <option>TÜBİTAK · Ar-Ge / R&amp;D</option>
-                                <option>Sadece tanışmak / Just saying hello</option>
+                            <select name="topic" id="topicSelect">
+                                <option data-key="arch">Yazılım mimarisi / Software architecture</option>
+                                <option data-key="ai">Yapay zekâ &amp; ürün entegrasyonu / AI &amp; product integration</option>
+                                <option data-key="llm">Lokal &amp; bulut LLM · RAG / Local &amp; cloud LLMs · RAG</option>
+                                <option data-key="data">Veri toplama &amp; etiketleme / Data collection &amp; labelling</option>
+                                <option data-key="cv">Bilgisayarlı görü / Computer vision</option>
+                                <option data-key="speech">Konuşma · NLP / Speech · NLP</option>
+                                <option data-key="bigdata">Büyük veri / Big data</option>
+                                <option data-key="fintech">Fintech · Gizlilik / Privacy</option>
+                                <option data-key="rnd">TÜBİTAK · Ar-Ge / R&amp;D</option>
+                                <option data-key="hello">Sadece tanışmak / Just saying hello</option>
                             </select></label>
+                        <div class="drafts">
+                            <span class="drafts-label"><span data-l="tr">Hazır taslaklar — birini seçip düzenleyebilirsiniz</span><span data-l="en">Ready-made drafts — pick one and edit</span></span>
+                            <div class="draft-chips">
+                                <button type="button" class="draft-chip" data-topic="arch" data-tr="Merhaba Tolga, üzerinde çalıştığımız bir ürün için yazılım mimarisi konusunda görüşünü almak istiyorum. Kısaca ürün: [ürün ve mevcut durum]. Özellikle [ölçeklenme / veri modeli / güvenlik] konusunda bir karar vermemiz gerekiyor." data-en="Hi Tolga, I&#x27;d like your view on the software architecture of a product we&#x27;re building. In short: [product and current state]. We need to make a decision about [scaling / data model / security] in particular."><i class="bi bi-diagram-3"></i><span data-l="tr">Mimari görüş</span><span data-l="en">Architecture advice</span></button>
+                                <button type="button" class="draft-chip" data-topic="ai" data-tr="Merhaba Tolga, ürünümüze / iş akışımıza yapay zekâ eklemeyi düşünüyoruz. Elimizde [veri türü] var ve [hedef] yapmak istiyoruz. Nereden başlamak gerektiğini konuşabilir miyiz?" data-en="Hi Tolga, we&#x27;re thinking about adding AI to our product / workflow. We have [type of data] and want to [goal]. Could we talk about where to start?"><i class="bi bi-cpu"></i><span data-l="tr">Ürüne yapay zekâ</span><span data-l="en">AI in our product</span></button>
+                                <button type="button" class="draft-chip" data-topic="llm" data-tr="Merhaba Tolga, verilerimizin dışarı çıkmaması gerekiyor; kendi dokümanlarımız üzerinde çalışan bir LLM / RAG çözümü arıyoruz. [doküman türü ve yaklaşık hacim]. Bulut ve kurum içi seçenekleri birlikte değerlendirebilir miyiz?" data-en="Hi Tolga, our data must not leave our network; we&#x27;re looking for an LLM / RAG solution over our own documents. [document types and rough volume]. Could we weigh cloud and on-premise options together?"><i class="bi bi-hdd-rack"></i><span data-l="tr">Kurum içi LLM / RAG</span><span data-l="en">On-prem LLM / RAG</span></button>
+                                <button type="button" class="draft-chip" data-topic="data" data-tr="Merhaba Tolga, bir model için veri toplama ve etiketleme sürecini kurmamız gerekiyor. Veri kaynağımız: [kaynak]. Hedefimiz: [model / kullanım senaryosu]. Sentetik veri de bir seçenek olabilir mi?" data-en="Hi Tolga, we need to set up data collection and labelling for a model. Our data source: [source]. Our goal: [model / use case]. Could synthetic data be an option too?"><i class="bi bi-database-add"></i><span data-l="tr">Veri toplama &amp; etiketleme</span><span data-l="en">Data collection &amp; labelling</span></button>
+                                <button type="button" class="draft-chip" data-topic="rnd" data-tr="Merhaba Tolga, TÜBİTAK [1501 / 1507] başvurusu için bir fikrimiz var: [fikir birkaç cümleyle]. Teknik kurgu ve yenilik argümanı üzerine konuşmak isteriz." data-en="Hi Tolga, we have an idea for a TÜBİTAK [1501 / 1507] application: [the idea in a few sentences]. We&#x27;d like to talk about the technical design and the novelty argument."><i class="bi bi-award"></i><span data-l="tr">TÜBİTAK projesi</span><span data-l="en">TÜBİTAK proposal</span></button>
+                                <button type="button" class="draft-chip" data-topic="hello" data-tr="Merhaba Tolga, web siteni gördüm ve kısaca tanışmak istedim. [Kendinizden ya da şirketinizden bir iki cümle]" data-en="Hi Tolga, I came across your website and wanted to say hello. [A sentence or two about you or your company]"><i class="bi bi-emoji-smile"></i><span data-l="tr">Sadece tanışmak</span><span data-l="en">Just saying hello</span></button>
+                            </div>
+                        </div>
                         <label><span data-l="tr">Neyi konuşmak istersiniz?</span><span data-l="en">What would you like to talk about?</span>
-                            <textarea name="message" rows="4" required></textarea></label>
-                        <button type="submit" class="btn btn-primary">
-                            <span data-l="tr">Mesajı gönder</span><span data-l="en">Send message</span> <i class="bi bi-send"></i>
-                        </button>
-                        <p class="form-note"><span data-l="tr">Gönder'e bastığınızda e-posta uygulamanız hazır bir taslakla açılır.</span><span data-l="en">Your email app opens with a ready-made draft.</span></p>
+                            <textarea name="message" id="messageBox" rows="6" required></textarea></label>
+                        <div class="send-row">
+                            <button type="submit" class="btn btn-primary" data-channel="email"><i class="bi bi-envelope"></i> <span data-l="tr">E-posta ile gönder</span><span data-l="en">Send by email</span></button>
+                            <button type="submit" class="btn btn-ghost" data-channel="whatsapp"><i class="bi bi-whatsapp"></i> <span data-l="tr">WhatsApp ile gönder</span><span data-l="en">Send on WhatsApp</span></button>
+                        </div>
+                        <p class="form-note"><span data-l="tr">Mesajınız e-posta uygulamanızda ya da WhatsApp'ta hazır bir taslak olarak açılır; göndermeden önce düzenleyebilirsiniz.</span><span data-l="en">Your message opens as a ready draft in your email app or WhatsApp; you can edit it before sending.</span></p>
                     </form>
                 </div>
             </div>
