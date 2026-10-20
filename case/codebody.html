@@ -51,7 +51,7 @@
         </section>
         <section class="case-body">
             <div class="container case-grid">
-                <nav class="case-toc" aria-label="İçindekiler"><a href="#problem"><span data-l="tr">Problem</span><span data-l="en">Problem</span></a><a href="#approach"><span data-l="tr">Yaklaşım</span><span data-l="en">Approach</span></a><a href="#architecture"><span data-l="tr">Mimari</span><span data-l="en">Architecture</span></a><a href="#outcome"><span data-l="tr">Sonuç</span><span data-l="en">Outcome</span></a></nav>
+                <nav class="case-toc" aria-label="İçindekiler"><a href="#problem"><span data-l="tr">Problem</span><span data-l="en">Problem</span></a><a href="#approach"><span data-l="tr">Yaklaşım</span><span data-l="en">Approach</span></a><a href="#screens"><span data-l="tr">Ekranlar</span><span data-l="en">Screens</span></a><a href="#architecture"><span data-l="tr">Mimari</span><span data-l="en">Architecture</span></a><a href="#outcome"><span data-l="tr">Sonuç</span><span data-l="en">Outcome</span></a></nav>
                 <div class="case-content">
                     <section id="problem">
                         <h2><span data-l="tr">Problem</span><span data-l="en">The problem</span></h2>
@@ -64,6 +64,16 @@
                         <div class="decision"><strong><span data-l="tr">Sesten seans notuna</span><span data-l="en">From voice to session notes</span></strong><span><span data-l="tr">Seans kaydı Whisper servisiyle yazıya dökülüyor; OpenAI Responses API saklı istemlerle not taslağı ve danışan özeti üretiyor. Uzun süren çağrılar Celery kuyruklarında arka planda çalışıyor.</span><span data-l="en">Session recordings are transcribed by a Whisper service; the OpenAI Responses API with stored prompts drafts notes and client summaries. Long-running calls run in the background on Celery queues.</span></span></div>
                         <div class="decision"><strong><span data-l="tr">Danışana sınırlı AI asistan + MCP</span><span data-l="en">Client-scoped AI assistant + MCP</span></strong><span><span data-l="tr">Uygulama içi asistan yalnızca ilgili danışanın verisini okuyabilen araçlar kullanıyor. Aynı araçlar Model Context Protocol üzerinden de açık; resmi SDK mevcut FastAPI sürümüyle çakıştığı için gereken protokol alt kümesi doğrudan uygulandı.</span><span data-l="en">The in-app assistant uses tools that can read only the relevant client's data. The same tools are exposed over the Model Context Protocol; because the official SDK conflicted with the FastAPI version in use, the required protocol subset was implemented directly.</span></span></div>
                         <div class="decision"><strong><span data-l="tr">Günlük operasyon</span><span data-l="en">Day-to-day operations</span></strong><span><span data-l="tr">Egzersiz kütüphanesi ve programları, takip planları, takvim, WhatsApp bildirimleri, sporcu performans metrikleri ve toplu tarama etkinlikleri.</span><span data-l="en">Exercise library and programs, care plans, calendar, WhatsApp notifications, athlete performance metrics and group screening events.</span></span></div>
+
+                    </section>
+                    <section id="screens">
+                        <h2><span data-l="tr">Ekranlar</span><span data-l="en">Screens</span></h2>
+                        <div class="shots">
+                            <figure class="wide"><img src="../static/assets/img/cases/codebody-dashboard.jpg" alt="CodeBody" loading="lazy" /><figcaption><span data-l="tr">Gösterge paneli: günün randevuları ve hızlı işlemler</span><span data-l="en">Dashboard: today's appointments and quick actions</span></figcaption></figure>
+                            <figure><img src="../static/assets/img/cases/codebody-skeleton.jpg" alt="CodeBody" loading="lazy" /><figcaption><span data-l="tr">Eklem noktaları, açılar ve vektörel sapma</span><span data-l="en">Keypoints, joint angles and vector deviation</span></figcaption></figure>
+                            <figure><img src="../static/assets/img/cases/codebody-analysis-history.jpg" alt="CodeBody" loading="lazy" /><figcaption><span data-l="tr">Arka planda çalışan AI postür analizleri</span><span data-l="en">AI posture analyses running in the background</span></figcaption></figure>
+                            <figure class="wide"><img src="../static/assets/img/cases/codebody-calendar.jpg" alt="CodeBody" loading="lazy" /><figcaption><span data-l="tr">Uzman bazlı takvim ve randevular (demo verisi)</span><span data-l="en">Per-specialist calendar and appointments (demo data)</span></figcaption></figure>
+                        </div>
 
                     </section>
                     <section id="architecture">

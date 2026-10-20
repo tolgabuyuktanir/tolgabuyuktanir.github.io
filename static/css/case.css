@@ -36,3 +36,6 @@
 @media (max-width: 640px) { .shots { grid-template-columns: 1fr 1fr; gap: 10px; } .case-hero { padding-top: 112px; } }
 .case-hero .app-icons { display: flex; margin-bottom: 18px; }
 .case-back { display: flex; width: max-content; }
+.shots figure { margin: 0; }
+.shots .wide { grid-column: 1 / -1; }
+.shots img { background: #fff; }
