@@ -16,8 +16,8 @@
         root.lang = lang;
         store.set('lang', lang);
         document.title = lang === 'tr'
-            ? 'Dr. Tolga Büyüktanır · Yapay Zekâ & Veri Danışmanlığı'
-            : 'Dr. Tolga Büyüktanır · AI & Data Consulting';
+            ? 'Dr. Tolga Büyüktanır · Yazılım Mimarisi & Yapay Zekâ'
+            : 'Dr. Tolga Büyüktanır · Software Architecture & AI';
     }
     document.getElementById('langToggle').addEventListener('click', () => {
         setLang(root.lang === 'tr' ? 'en' : 'tr');
@@ -94,8 +94,8 @@
 
     // ---------- typed words ----------
     const words = {
-        tr: ['yapay zekâ', 'büyük veri', 'bilgisayarlı görü', 'LLM ajanları', 'şifreli ML'],
-        en: ['AI', 'big data', 'computer vision', 'LLM agents', 'encrypted ML']
+        tr: ['yazılım mimarisi', 'yapay zekâ', 'büyük veri', 'bilgisayarlı görü', 'LLM ajanları'],
+        en: ['software architecture', 'AI', 'big data', 'computer vision', 'LLM agents']
     };
     function typer(el, list) {
         if (!el) return;
@@ -179,7 +179,7 @@
     document.getElementById('contactForm').addEventListener('submit', e => {
         e.preventDefault();
         const d = new FormData(e.target);
-        const subject = `[Consulting] ${d.get('topic')} — ${d.get('name')}${d.get('company') ? ' / ' + d.get('company') : ''}`;
+        const subject = `[tolgabuyuktanir.github.io] ${d.get('topic')} — ${d.get('name')}${d.get('company') ? ' / ' + d.get('company') : ''}`;
         const body = `${d.get('message')}\n\n— ${d.get('name')}${d.get('company') ? '\n' + d.get('company') : ''}`;
         location.href = 'mailto:tolgabuyuktanir@gmail.com?subject=' + encodeURIComponent(subject) +
             '&body=' + encodeURIComponent(body);
@@ -198,10 +198,10 @@
         W = canvas.clientWidth; H = canvas.clientHeight;
         canvas.width = W * dpr; canvas.height = H * dpr;
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-        const n = Math.min(110, Math.floor((W * H) / 14000));
+        const n = Math.min(80, Math.floor((W * H) / 18000));
         pts = Array.from({ length: n }, () => ({
             x: Math.random() * W, y: Math.random() * H,
-            vx: (Math.random() - 0.5) * 0.35, vy: (Math.random() - 0.5) * 0.35,
+            vx: (Math.random() - 0.5) * 0.18, vy: (Math.random() - 0.5) * 0.18,
             r: Math.random() * 1.6 + 0.6
         }));
     }
@@ -219,17 +219,17 @@
                 const q = pts[j];
                 const dx = p.x - q.x, dy = p.y - q.y, d = Math.hypot(dx, dy);
                 if (d < max) {
-                    ctx.strokeStyle = `rgba(129,140,248,${(1 - d / max) * 0.35})`;
+                    ctx.strokeStyle = `rgba(29,78,216,${(1 - d / max) * 0.16})`;
                     ctx.lineWidth = 1;
                     ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y); ctx.stroke();
                 }
             }
             const md = Math.hypot(p.x - mouse.x, p.y - mouse.y);
             if (md < 180) {
-                ctx.strokeStyle = `rgba(56,189,248,${(1 - md / 180) * 0.6})`;
+                ctx.strokeStyle = `rgba(14,116,144,${(1 - md / 180) * 0.35})`;
                 ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(mouse.x, mouse.y); ctx.stroke();
             }
-            ctx.fillStyle = 'rgba(199,210,254,.85)';
+            ctx.fillStyle = 'rgba(71,85,105,.35)';
             ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fill();
         }
         if (running && !reduce) requestAnimationFrame(draw);
