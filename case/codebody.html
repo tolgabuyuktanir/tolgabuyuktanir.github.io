@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CodeBody · Tolga Büyüktanır</title>
+    <meta name="description" content="CodeBody: esenlik merkezleri için yapay zekâ destekli yönetim platformu — vaka çalışması." />
+    <meta property="og:title" content="CodeBody · Tolga Büyüktanır" />
+    <meta property="og:description" content="CodeBody: esenlik merkezleri için yapay zekâ destekli yönetim platformu — vaka çalışması." />
+    <meta property="og:image" content="https://tolgabuyuktanir.github.io/static/assets/img/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://tolgabuyuktanir.github.io/case/codebody.html" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/x-icon" href="../static/assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="../static/css/site.css" rel="stylesheet" />
+    <link href="../static/css/case.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="../index.html" class="brand" aria-label="Tolga Büyüktanır">
+                <span class="brand-mark">TB</span>
+                <span class="brand-text">Tolga Büyüktanır</span>
+            </a>
+            <div class="nav-tools">
+                <a href="../index.html#contact" class="btn btn-primary" style="padding:9px 16px;font-size:14px"><span data-l="tr">Tanışalım</span><span data-l="en">Let's talk</span></a>
+                <button class="lang-toggle" id="langToggle" type="button" aria-label="Dil / Language">
+                    <span class="lang-opt" data-opt="tr">TR</span><span class="lang-opt" data-opt="en">EN</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="case-hero">
+            <div class="container">
+                <a class="case-back" href="../index.html#projects"><i class="bi bi-arrow-left"></i> <span data-l="tr">Tüm projeler</span><span data-l="en">All projects</span></a>
+                <img class="case-logo" src="../static/assets/img/logos/codebody.svg" alt="CodeBody" style="height:56px" />
+                <h1><span data-l="tr">Esenlik merkezleri için yapay zekâ destekli bir yönetim platformu</span><span data-l="en">An AI-powered management platform for wellness centers</span></h1>
+                <p class="lead"><span data-l="tr">CodeBody, ortağı olduğum FizyoAktif şirketinin ürünü. Uzmanların ölçüm, not tutma ve takip yükünü yapay zekâyla hafifletirken randevudan faturaya kadar merkezin günlük işini tek bir yerde topluyor.</span><span data-l="en">CodeBody is a product of FizyoAktif, a company I co-own. It lightens specialists' load of measurement, note-taking and follow-up with AI, while bringing a center's daily work — from scheduling to billing — into one place.</span></p>
+                <div class="spot-actions"><a href="https://codebody.com.tr" target="_blank" rel="noopener" class="btn btn-primary">codebody.com.tr <i class="bi bi-arrow-up-right"></i></a></div>
+                <ul class="case-meta"><li><strong><span data-l="tr">Rol</span><span data-l="en">Role</span></strong><span data-l="tr">Ortak · mimari &amp; geliştirme</span><span data-l="en">Partner · architecture &amp; engineering</span></li><li><strong><span data-l="tr">Kapsam</span><span data-l="en">Scope</span></strong><span data-l="tr">Çok kiracılı SaaS · 4 servis</span><span data-l="en">Multi-tenant SaaS · 4 services</span></li><li><strong><span data-l="tr">Yığın</span><span data-l="en">Stack</span></strong><span data-l="tr">React · FastAPI · Celery</span><span data-l="en">React · FastAPI · Celery</span></li></ul>
+
+            </div>
+        </section>
+        <section class="case-body">
+            <div class="container case-grid">
+                <nav class="case-toc" aria-label="İçindekiler"><a href="#problem"><span data-l="tr">Problem</span><span data-l="en">Problem</span></a><a href="#approach"><span data-l="tr">Yaklaşım</span><span data-l="en">Approach</span></a><a href="#architecture"><span data-l="tr">Mimari</span><span data-l="en">Architecture</span></a><a href="#outcome"><span data-l="tr">Sonuç</span><span data-l="en">Outcome</span></a></nav>
+                <div class="case-content">
+                    <section id="problem">
+                        <h2><span data-l="tr">Problem</span><span data-l="en">The problem</span></h2>
+                        <p><span data-l="tr">Esenlik merkezlerinde uzmanların zamanının önemli bir kısmı ölçüm, not ve takibe gidiyor. Postür değerlendirmesi çoğu zaman göz kararı yapılıyor, seans notları sonradan yazılıyor; randevu, mesajlaşma ve faturalama ise farklı araçlara dağılmış durumda.</span><span data-l="en">At wellness centers, a large share of specialists' time goes into measurement, notes and follow-up. Posture assessment is often done by eye, session notes are written afterwards, and scheduling, messaging and billing are spread across different tools.</span></p>
+
+                    </section>
+                    <section id="approach">
+                        <h2><span data-l="tr">Yaklaşım</span><span data-l="en">Approach</span></h2>
+                        <div class="decision"><strong><span data-l="tr">Görüntüden ölçüm</span><span data-l="en">Measurement from images</span></strong><span><span data-l="tr">Ayrı bir AI servisi MediaPipe, YOLO ve SAM ile fotoğraftan eklem noktalarını ve açıları çıkarıyor; danışan fotoğrafı telefondan da yüklenebiliyor. GPU varsa hızlanıyor, yoksa CPU'da da çalışıyor.</span><span data-l="en">A dedicated AI service extracts keypoints and joint angles from photos with MediaPipe, YOLO and SAM; client photos can be uploaded straight from a phone. It speeds up on a GPU and still runs on CPU.</span></span></div>
+                        <div class="decision"><strong><span data-l="tr">Sesten seans notuna</span><span data-l="en">From voice to session notes</span></strong><span><span data-l="tr">Seans kaydı Whisper servisiyle yazıya dökülüyor; OpenAI Responses API saklı istemlerle not taslağı ve danışan özeti üretiyor. Uzun süren çağrılar Celery kuyruklarında arka planda çalışıyor.</span><span data-l="en">Session recordings are transcribed by a Whisper service; the OpenAI Responses API with stored prompts drafts notes and client summaries. Long-running calls run in the background on Celery queues.</span></span></div>
+                        <div class="decision"><strong><span data-l="tr">Danışana sınırlı AI asistan + MCP</span><span data-l="en">Client-scoped AI assistant + MCP</span></strong><span><span data-l="tr">Uygulama içi asistan yalnızca ilgili danışanın verisini okuyabilen araçlar kullanıyor. Aynı araçlar Model Context Protocol üzerinden de açık; resmi SDK mevcut FastAPI sürümüyle çakıştığı için gereken protokol alt kümesi doğrudan uygulandı.</span><span data-l="en">The in-app assistant uses tools that can read only the relevant client's data. The same tools are exposed over the Model Context Protocol; because the official SDK conflicted with the FastAPI version in use, the required protocol subset was implemented directly.</span></span></div>
+                        <div class="decision"><strong><span data-l="tr">Günlük operasyon</span><span data-l="en">Day-to-day operations</span></strong><span><span data-l="tr">Egzersiz kütüphanesi ve programları, takip planları, takvim, WhatsApp bildirimleri, sporcu performans metrikleri ve toplu tarama etkinlikleri.</span><span data-l="en">Exercise library and programs, care plans, calendar, WhatsApp notifications, athlete performance metrics and group screening events.</span></span></div>
+
+                    </section>
+                    <section id="architecture">
+                        <h2><span data-l="tr">Mimari</span><span data-l="en">Architecture</span></h2>
+                        <ul class="points"><li><span data-l="tr">Ön yüz: React 18 + TypeScript + Vite + Tailwind</span><span data-l="en">Frontend: React 18 + TypeScript + Vite + Tailwind</span></li><li><span data-l="tr">Backend API: FastAPI + SQLAlchemy + PostgreSQL</span><span data-l="en">Backend API: FastAPI + SQLAlchemy + PostgreSQL</span></li><li><span data-l="tr">AI servisi: poz kestirimi ve postür analizi (MediaPipe, YOLO, SAM)</span><span data-l="en">AI service: pose estimation and posture analysis (MediaPipe, YOLO, SAM)</span></li><li><span data-l="tr">Whisper servisi: konuşmadan metne (faster-whisper)</span><span data-l="en">Whisper service: speech-to-text (faster-whisper)</span></li><li><span data-l="tr">Celery + Redis: transkripsiyon, AI analizi, e-posta ve bildirim kuyrukları</span><span data-l="en">Celery + Redis: transcription, AI analysis, email and notification queues</span></li><li><span data-l="tr">Güvenlik: çok kiracılı rol tabanlı yetki, modül ve plan kapıları, açık rıza, denetim kaydı, CrowdSec</span><span data-l="en">Security: multi-tenant role-based access, module and plan gates, consents, audit logs, CrowdSec</span></li></ul>
+                        <ul class="tags"><li>React · TypeScript</li><li>FastAPI</li><li>PostgreSQL</li><li>Celery · Redis</li><li>MediaPipe · YOLO · SAM</li><li>Whisper</li><li>OpenAI</li><li>MCP</li><li>KVKK</li></ul>
+
+                    </section>
+                    <section id="outcome">
+                        <h2><span data-l="tr">Sonuç</span><span data-l="en">Outcome</span></h2>
+                        <p><span data-l="tr">CodeBody canlıda: codebody.com.tr. Ölçüm, not ve takip gibi tekrar eden işleri yapay zekâya devrederek uzmanın danışanıyla geçirdiği zamana odaklanmasını hedefliyor.</span><span data-l="en">CodeBody is live at codebody.com.tr. By handing repetitive work such as measurement, notes and follow-up to AI, it aims to let specialists focus on time with their clients.</span></p>
+
+                    </section>
+
+                    <div class="case-cta">
+                        <h2><span data-l="tr">Benzer bir problem üzerine mi düşünüyorsunuz?</span><span data-l="en">Thinking about a similar problem?</span></h2>
+                        <p><span data-l="tr">Mimari, yapay zekâ entegrasyonu ya da ürünleştirme üzerine konuşmaktan memnuniyet duyarım. Satış görüşmesi değil, sadece bir sohbet.</span><span data-l="en">I'm happy to talk through architecture, AI integration or productisation. Not a sales call — just a conversation.</span></p>
+                        <a href="../index.html#contact" class="btn btn-primary"><span data-l="tr">Tanışalım</span><span data-l="en">Let's talk</span> <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span>&copy; <span id="year">2026</span> Tolga Büyüktanır</span>
+            <div class="footer-links">
+                <a href="https://github.com/tolgabuyuktanir" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/tolga-buyuktanir-ph-d-6b63733a/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://scholar.google.com/citations?user=D2Md-J4AAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../static/js/case.js"></script>
+</body>
+
+</html>

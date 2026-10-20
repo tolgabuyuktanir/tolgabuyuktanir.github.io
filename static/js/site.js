@@ -162,9 +162,28 @@
     setupFilter(
         document.querySelectorAll('#projects .filter'),
         projects, 'data-cat', 'filter');
+    // publications: show the latest few, reveal the rest on demand
+    const pubList = document.getElementById('pubs');
+    const pubs = pubList.querySelectorAll('.pub');
+    const morePubs = document.getElementById('morePubs');
+    const PUB_VISIBLE = 6;
+    let pubsExpanded = false;
+    pubs.forEach((p, i) => { if (i >= PUB_VISIBLE) p.classList.add('extra'); });
+    morePubs.querySelector('.more-count').textContent = `(+${Math.max(pubs.length - PUB_VISIBLE, 0)})`;
+    morePubs.addEventListener('click', () => {
+        pubsExpanded = true;
+        pubList.classList.remove('collapsed');
+        morePubs.parentElement.classList.add('hidden');
+    });
+    document.querySelectorAll('#pubFilters .filter').forEach(btn => btn.addEventListener('click', () => {
+        const all = btn.dataset.pub === 'all';
+        pubList.classList.toggle('collapsed', all && !pubsExpanded);
+        morePubs.parentElement.classList.toggle('hidden', !all || pubsExpanded);
+    }));
+
     setupFilter(
         document.querySelectorAll('#pubFilters .filter'),
-        document.querySelectorAll('.pub'), 'data-type', 'pub');
+        pubs, 'data-type', 'pub');
 
     // ---------- demo (lazy) ----------
     document.getElementById('demoLoad').addEventListener('click', () => {

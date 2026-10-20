@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NUYA · Tolga Büyüktanır</title>
+    <meta name="description" content="NUYA: yedi markayı tek çekirdekten besleyen değerlendirme, raporlama ve AI platformu — vaka çalışması." />
+    <meta property="og:title" content="NUYA · Tolga Büyüktanır" />
+    <meta property="og:description" content="NUYA: yedi markayı tek çekirdekten besleyen değerlendirme, raporlama ve AI platformu — vaka çalışması." />
+    <meta property="og:image" content="https://tolgabuyuktanir.github.io/static/assets/img/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://tolgabuyuktanir.github.io/case/nuya.html" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/x-icon" href="../static/assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="../static/css/site.css" rel="stylesheet" />
+    <link href="../static/css/case.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="../index.html" class="brand" aria-label="Tolga Büyüktanır">
+                <span class="brand-mark">TB</span>
+                <span class="brand-text">Tolga Büyüktanır</span>
+            </a>
+            <div class="nav-tools">
+                <a href="../index.html#contact" class="btn btn-primary" style="padding:9px 16px;font-size:14px"><span data-l="tr">Tanışalım</span><span data-l="en">Let's talk</span></a>
+                <button class="lang-toggle" id="langToggle" type="button" aria-label="Dil / Language">
+                    <span class="lang-opt" data-opt="tr">TR</span><span class="lang-opt" data-opt="en">EN</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="case-hero">
+            <div class="container">
+                <a class="case-back" href="../index.html#projects"><i class="bi bi-arrow-left"></i> <span data-l="tr">Tüm projeler</span><span data-l="en">All projects</span></a>
+                <img class="case-logo" src="../static/assets/img/logos/nuya.png" alt="NUYA" />
+                <h1><span data-l="tr">Dört ayrı uygulamadan, yedi markayı taşıyan tek bir platforma</span><span data-l="en">From four separate apps to one platform carrying seven brands</span></h1>
+                <p class="lead"><span data-l="tr">NUYA; sporcular, terapi ve koçluk, çiftler, okullar, ekipler ve genel kullanıcılar için yedi ürünün ortak çekirdeği. Test, puanlama, rapor, yetki, ödeme, yapay zekâ ve analitik tek yerde; ürünler yalnızca marka, şablon ve deneyimi ekliyor.</span><span data-l="en">NUYA is the shared core behind seven products for athletes, therapy &amp; coaching, couples, schools, teams and the general public. Tests, scoring, reports, permissions, payments, AI and analytics live in one place; products add only branding, templates and experience.</span></p>
+                <ul class="live-links" style="margin-top:22px">
+                    <li><a href="https://gonuya.com/" target="_blank" rel="noopener"><img src="../static/assets/img/logos/nuya.png" alt="NUYA" />gonuya.com</a></li>
+                    <li><a href="https://burself.co/" target="_blank" rel="noopener"><img src="../static/assets/img/logos/beyourself.png" alt="Be Yourself" />burself.co</a></li>
+                    <li><a href="https://mirrorme.today/" target="_blank" rel="noopener"><img src="../static/assets/img/logos/mirrorme.png" alt="MirrorMe" />mirrorme.today</a></li>
+                    <li><a href="https://submind.me/" target="_blank" rel="noopener"><img src="../static/assets/img/logos/submind.png" alt="Submind" />submind.me</a></li>
+                </ul>
+                <ul class="case-meta"><li><strong><span data-l="tr">Rol</span><span data-l="en">Role</span></strong><span data-l="tr">Platform mimarisi &amp; baş geliştirici</span><span data-l="en">Platform architecture &amp; lead engineer</span></li><li><strong><span data-l="tr">Kapsam</span><span data-l="en">Scope</span></strong><span data-l="tr">7 marka · çok kiracılı SaaS</span><span data-l="en">7 brands · multi-tenant SaaS</span></li><li><strong><span data-l="tr">Yığın</span><span data-l="en">Stack</span></strong><span data-l="tr">FastAPI · PostgreSQL · React</span><span data-l="en">FastAPI · PostgreSQL · React</span></li></ul>
+
+            </div>
+        </section>
+        <section class="case-body">
+            <div class="container case-grid">
+                <nav class="case-toc" aria-label="İçindekiler"><a href="#problem"><span data-l="tr">Problem</span><span data-l="en">Problem</span></a><a href="#approach"><span data-l="tr">Yaklaşım</span><span data-l="en">Approach</span></a><a href="#architecture"><span data-l="tr">Mimari</span><span data-l="en">Architecture</span></a><a href="#outcome"><span data-l="tr">Sonuç</span><span data-l="en">Outcome</span></a></nav>
+                <div class="case-content">
+                    <section id="problem">
+                        <h2><span data-l="tr">Problem</span><span data-l="en">The problem</span></h2>
+                        <p><span data-l="tr">Başlangıçta dört bağımsız uygulama vardı ve her biri aynı Enneagram puanlamasını kendi Firebase projesinde yeniden yazıyordu. Aynı test farklı uygulamalarda farklı sonuç verebiliyordu; kullanıcı, ödeme ve analitik her yerde ayrı ayrı çözülmüştü. Ürün sayısı yediye çıkacaktı.</span><span data-l="en">It started as four independent apps, each re-implementing the same Enneagram scoring on its own Firebase project. The same test could produce different results in different apps; users, payments and analytics were solved separately everywhere. The product count was about to grow to seven.</span></p>
+
+                    </section>
+                    <section id="approach">
+                        <h2><span data-l="tr">Yaklaşım</span><span data-l="en">Approach</span></h2>
+                        <p><span data-l="tr">Tasarımın merkezinde birbirinden bağımsız üç eksen var: <strong>ürün</strong> (markalı deneyim), <strong>kiracı</strong> (okul, kulüp, klinik, şirket ya da bireyin kendi alanı) ve <strong>puanlama modeli</strong> (sürümlü Enneagram ve NUYA). Bu üç eksen ayrı tutulunca platform kod tekrarı olmadan hem çok kiracılı hem çok ürünlü olabiliyor.</span><span data-l="en">The design rests on three independent axes: <strong>product</strong> (the branded experience), <strong>tenant</strong> (a school, club, clinic, company or an individual's own space) and <strong>scoring model</strong> (versioned Enneagram and NUYA). Keeping them orthogonal lets the platform be multi-tenant and multi-product without duplicated code.</span></p>
+                        <div class="decision"><strong><span data-l="tr">Puanlama sunucuda ve deterministik</span><span data-l="en">Scoring is server-side and deterministic</span></strong><span><span data-l="tr">Tek bir puanlama çalıştırması aynı cevaplardan iki sonuç üretiyor: standart Enneagram tipi ve ek sorularla genişletilmiş NUYA profili (baskın ego üçlüsü, merkez kazananları, alt tipler). İstemci asla puan hesaplamıyor.</span><span data-l="en">One scoring run produces two results from the same answers: the standard Enneagram type and the extended NUYA profile (dominant-ego triad, centre winners, subtypes) using additional questions. The client never computes scores.</span></span></div>
+                        <div class="decision"><strong><span data-l="tr">Satır düzeyinde çok kiracılılık</span><span data-l="en">Row-level multi-tenancy</span></strong><span><span data-l="tr">PostgreSQL Row-Level Security, değişmezlik tetikleyicileri ve RBAC + ABAC yetki modeli. Testler taslak → yayın → arşiv akışıyla sürümleniyor; yayınlanmış sürüm değiştirilemiyor.</span><span data-l="en">PostgreSQL Row-Level Security, immutability triggers and an RBAC + ABAC permission model. Tests are versioned draft → publish → archive; a published version cannot be altered.</span></span></div>
+                        <div class="decision"><strong><span data-l="tr">Yetki öncelikli yapay zekâ</span><span data-l="en">Authorization-first AI</span></strong><span><span data-l="tr">Sohbet bağlamı yalnızca kullanıcının görmeye yetkili olduğu sonuçlardan kuruluyor; puanlama kuralları ve sistem talimatları asla bağlama girmiyor. Claude ve OpenAI aynı sağlayıcı arayüzünün arkasında; terapi ürünlerinde kriz tespiti ve insan uzmana devir var.</span><span data-l="en">Chat context is built only from results the user is allowed to read; scoring rules and system prompts never enter the context. Claude and OpenAI sit behind one provider interface; therapy products add crisis detection and hand-off to a human expert.</span></span></div>
+                        <div class="decision"><strong><span data-l="tr">Ses doğrudan tarayıcıdan</span><span data-l="en">Voice goes browser-direct</span></strong><span><span data-l="tr">Sesli koç OpenAI Realtime'a tarayıcıdan WebRTC ile bağlanıyor; ses sunucudan hiç geçmiyor ama aynı bağlam ve korumalar geçerli.</span><span data-l="en">The voice coach connects to OpenAI Realtime from the browser over WebRTC; audio never passes through the server, yet the same context and guardrails apply.</span></span></div>
+
+                    </section>
+                    <section id="architecture">
+                        <h2><span data-l="tr">Mimari</span><span data-l="en">Architecture</span></h2>
+                        <ul class="points"><li><span data-l="tr">Backend: FastAPI modüler monolit, SQLAlchemy 2.0 async, Alembic, Pydantic v2</span><span data-l="en">Backend: FastAPI modular monolith, SQLAlchemy 2.0 async, Alembic, Pydantic v2</span></li><li><span data-l="tr">Veri: PostgreSQL 16, RLS ile kiracı izolasyonu</span><span data-l="en">Data: PostgreSQL 16 with RLS tenant isolation</span></li><li><span data-l="tr">Ön yüz: React 18 + Vite + TypeScript + Tailwind v4; tüketici uygulamaları ortak bir <code>consumer-core</code> paketini paylaşıyor</span><span data-l="en">Frontend: React 18 + Vite + TypeScript + Tailwind v4; consumer apps share one <code>consumer-core</code> package</span></li><li><span data-l="tr">Kimlik: PostgreSQL tabanlı; sihirli bağlantı ve Google girişi, dönen httpOnly yenileme çerezi</span><span data-l="en">Auth: PostgreSQL-native; magic link and Google sign-in, rotating httpOnly refresh cookie</span></li><li><span data-l="tr">Ödeme: lisans/kupon kullanımı, iyzico soyutlaması ve sohbet/ses kullanımını ölçen ön ödemeli kredi cüzdanı</span><span data-l="en">Payments: license/voucher redemption, an iyzico abstraction and a prepaid credit wallet that meters chat and voice</span></li><li><span data-l="tr">Raporlama: ücretsiz/ücretli katmanlı, hedef kitleye göre görünürlüğü olan ürün bazlı şablonlar ve PDF üretimi</span><span data-l="en">Reporting: per-product templates with free/paid tiers, audience-based visibility and PDF rendering</span></li></ul>
+                        <ul class="tags"><li>FastAPI</li><li>PostgreSQL 16 · RLS</li><li>React 18</li><li>Tailwind v4</li><li>Anthropic Claude</li><li>OpenAI Realtime</li><li>WebRTC</li><li>iyzico</li><li>Docker · Caddy</li></ul>
+
+                    </section>
+                    <section id="outcome">
+                        <h2><span data-l="tr">Sonuç</span><span data-l="en">Outcome</span></h2>
+                        <p><span data-l="tr">Yedi marka tek bir puanlama uygulaması, tek kullanıcı ve yetki modeli, tek ödeme ve analitik katmanı üzerinde çalışıyor. Yeni bir ürün eklemek artık platform mantığını kopyalamak değil; marka, şablon ve deneyimi tanımlamak anlamına geliyor.</span><span data-l="en">Seven brands run on one scoring implementation, one user and permission model, and one payments and analytics layer. Adding a new product no longer means copying platform logic; it means defining branding, templates and experience.</span></p>
+
+                    </section>
+
+                    <div class="case-cta">
+                        <h2><span data-l="tr">Benzer bir problem üzerine mi düşünüyorsunuz?</span><span data-l="en">Thinking about a similar problem?</span></h2>
+                        <p><span data-l="tr">Mimari, yapay zekâ entegrasyonu ya da ürünleştirme üzerine konuşmaktan memnuniyet duyarım. Satış görüşmesi değil, sadece bir sohbet.</span><span data-l="en">I'm happy to talk through architecture, AI integration or productisation. Not a sales call — just a conversation.</span></p>
+                        <a href="../index.html#contact" class="btn btn-primary"><span data-l="tr">Tanışalım</span><span data-l="en">Let's talk</span> <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span>&copy; <span id="year">2026</span> Tolga Büyüktanır</span>
+            <div class="footer-links">
+                <a href="https://github.com/tolgabuyuktanir" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/tolga-buyuktanir-ph-d-6b63733a/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://scholar.google.com/citations?user=D2Md-J4AAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../static/js/case.js"></script>
+</body>
+
+</html>

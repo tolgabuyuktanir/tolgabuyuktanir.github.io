@@ -524,3 +524,17 @@ a.pub-title::after { content: " ↗"; color: var(--primary); font-size: .85em; }
 .live-links img { height: 20px; width: auto; }
 .live-label { display: block; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin: 0 0 10px; }
 @media (max-width: 640px) { .trusted-logos { gap: 12px 22px; } .trusted-logos img { height: 22px; } }
+
+/* ---------- publications collapse ---------- */
+.pubs.collapsed .pub.extra { display: none; }
+
+/* ---------- FAQ ---------- */
+.faq { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.faq details { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 0 22px; box-shadow: var(--shadow-sm); transition: border-color .2s; }
+.faq details[open] { border-color: var(--primary-line); }
+.faq summary { list-style: none; cursor: pointer; padding: 18px 0; font-weight: 600; color: var(--text); display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary i { color: var(--primary); transition: transform .2s; flex: none; }
+.faq details[open] summary i { transform: rotate(45deg); }
+.faq details p { margin: 0 0 18px; color: var(--muted); font-size: 15px; }
+@media (max-width: 920px) { .faq { grid-template-columns: 1fr; } }
