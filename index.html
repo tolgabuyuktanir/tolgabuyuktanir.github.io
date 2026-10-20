@@ -180,7 +180,7 @@
         <!-- ============ CODEBODY ============ -->
         <section class="section spotlight" id="codebody">
             <div class="container">
-                <div class="spot reveal">
+                <div class="spot spot-stack reveal">
                     <div class="spot-copy">
                         <span class="badge badge-product"><i class="bi bi-star-fill"></i> <span data-l="tr">Geliştirdiğim ticari ürün · SaaS</span><span data-l="en">A commercial product I built · SaaS</span></span>
                         <h2><span class="spot-title"><img class="spot-icon" src="static/assets/img/logos/codebody.svg" alt="" width="48" height="48" />CodeBody</span> <span class="spot-sub"><span data-l="tr">Esenlik merkezleri için yapay zekâ destekli yönetim platformu</span><span data-l="en">The AI-powered platform for wellness centers</span></span></h2>
@@ -202,12 +202,14 @@
                     <div class="spot-visual">
                         <figure class="shot-frame">
                             <div class="mock-bar"><b class="dot"></b><b class="dot"></b><b class="dot"></b><em>codebody · <span data-l="tr">Gösterge paneli</span><span data-l="en">Dashboard</span></em></div>
-                            <img src="static/assets/img/cases/codebody-dashboard.jpg" alt="CodeBody gösterge paneli" width="1400" height="629" loading="lazy" />
+                            <button type="button" class="zoomable" aria-label="CodeBody gösterge paneli"><img src="static/assets/img/cases/codebody-dashboard.jpg" alt="CodeBody gösterge paneli" width="1920" height="862" loading="lazy" data-zoom /></button>
                         </figure>
-                        <figure class="shot-frame shot-offset">
-                            <div class="mock-bar"><b class="dot"></b><b class="dot"></b><b class="dot"></b><em>codebody · <span data-l="tr">Postür analizi</span><span data-l="en">Posture analysis</span></em></div>
-                            <img src="static/assets/img/cases/codebody-analysis-history.jpg" alt="CodeBody postür analizi" width="1200" height="785" loading="lazy" />
-                        </figure>
+                        <div class="shot-row">
+                            <figure class="shot-thumb"><button type="button" class="zoomable" aria-label="Eklem noktaları ve açılar"><img src="static/assets/img/cases/codebody-skeleton.jpg" alt="Eklem noktaları ve açılar" width="900" height="1420" loading="lazy" data-zoom /></button><figcaption><span data-l="tr">Eklem noktaları ve açılar</span><span data-l="en">Keypoints and joint angles</span></figcaption></figure>
+                            <figure class="shot-thumb"><button type="button" class="zoomable" aria-label="AI postür analizleri"><img src="static/assets/img/cases/codebody-analysis-history.jpg" alt="AI postür analizleri" width="1600" height="1047" loading="lazy" data-zoom /></button><figcaption><span data-l="tr">AI postür analizleri</span><span data-l="en">AI posture analyses</span></figcaption></figure>
+                            <figure class="shot-thumb"><button type="button" class="zoomable" aria-label="Uzman bazlı takvim"><img src="static/assets/img/cases/codebody-calendar.jpg" alt="Uzman bazlı takvim" width="1600" height="1047" loading="lazy" data-zoom /></button><figcaption><span data-l="tr">Uzman bazlı takvim</span><span data-l="en">Per-specialist calendar</span></figcaption></figure>
+                        </div>
+                        <p class="zoom-hint"><i class="bi bi-zoom-in"></i> <span data-l="tr">Büyütmek için görsele tıklayın</span><span data-l="en">Click an image to enlarge</span></p>
                     </div>
                 </div>
             </div>
@@ -918,6 +920,7 @@
     </footer>
 
     <script src="static/js/site.js"></script>
+    <script src="static/js/zoom.js"></script>
 </body>
 
 </html>

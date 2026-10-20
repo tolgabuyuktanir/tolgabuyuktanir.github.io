@@ -39,3 +39,4 @@
 .shots figure { margin: 0; }
 .shots .wide { grid-column: 1 / -1; }
 .shots img { background: #fff; }
+.shots img { cursor: zoom-in; }
