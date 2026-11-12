@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://tolgabuyuktanir.github.io/</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://tolgabuyuktanir.github.io/?lang=tr" />
     <xhtml:link rel="alternate" hreflang="en" href="https://tolgabuyuktanir.github.io/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tolgabuyuktanir.github.io/" />
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image><image:loc>https://tolgabuyuktanir.github.io/static/assets/img/photo.png</image:loc></image:image>
+    <image:image><image:loc>https://tolgabuyuktanir.github.io/static/assets/img/og-image.png</image:loc></image:image>
   </url>
-  <url><loc>https://tolgabuyuktanir.github.io/case/nuya.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tolgabuyuktanir.github.io/case/codebody.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tolgabuyuktanir.github.io/case/askaboutislam.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url>
+    <loc>https://tolgabuyuktanir.github.io/case/nuya.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolgabuyuktanir.github.io/case/codebody.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://tolgabuyuktanir.github.io/static/assets/img/cases/codebody-dashboard.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://tolgabuyuktanir.github.io/case/askaboutislam.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://tolgabuyuktanir.github.io/static/assets/img/cases/askaboutislam-cover.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://tolgabuyuktanir.github.io/llms.txt</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>

@@ -1,0 +1,43 @@
+# Dr. Tolga Büyüktanır
+
+> Computer engineer (PhD, Yıldız Technical University, 2025) based in İstanbul, Türkiye, with 10+ years of R&D in machine learning, big data, computer vision, robotics and fintech. He leads R&D at Agra Fintech (embedded finance, explainable AI, privacy-preserving machine learning) and works with companies, mostly remotely, as an independent R&D consultant on software architecture, AI product integration, local and cloud LLMs, RAG and AI agents. Languages: Turkish (native), English (C1).
+
+Key facts:
+
+- Name: Tolga Büyüktanır (also written Tolga Buyuktanir), Dr., PhD in Computer Engineering.
+- Location: İstanbul, Türkiye. Works remotely; in-person meetings in İstanbul are possible.
+- Contact: tolgabuyuktanir@gmail.com · https://tolgabuyuktanir.github.io/#contact
+- 10+ years in R&D, 8 TÜBİTAK-funded projects, 25+ papers, books and talks, R&D roles at 6 technology companies, including Agra Fintech, Loodos R&D Center, İdea Teknoloji, Huawei Turkey R&D and Link Bilgisayar.
+- Awards: iF Design Award and German Design Award for the BRIFIC e-scooter (R&D technical lead for its embedded, mobile and web software); UBMK'22 Best Paper Award (2nd place); YÖK 100/2000 PhD Scholarship; TÜBİTAK 2224-B scientific event grant (2025).
+- Education: PhD, Computer Engineering, Yıldız Technical University (2018–2025), thesis "Intelligent prefetching methodologies for data-intensive systems"; MSc, Computer Engineering (Big Data), Ankara Yıldırım Beyazıt University (2014–2017); BSc, Computer Engineering, Erciyes University (2009–2014).
+
+## Services
+
+- [Software architecture & product development](https://tolgabuyuktanir.github.io/#services): multi-tenant SaaS, service boundaries, data modelling, security and access control.
+- [AI & product integration](https://tolgabuyuktanir.github.io/#services): where AI adds value, model choice, integration and measurement; forecasting, classification, anomaly detection, LLM features.
+- [Local & cloud LLMs](https://tolgabuyuktanir.github.io/#services): on-premise and air-gapped deployments, cloud models and one provider layer across both, with KVKK (Turkish data protection) in mind.
+- [GenAI, LLM agents & RAG](https://tolgabuyuktanir.github.io/#services): knowledge bases from documents (incl. OCR), RAG, tool-using agents.
+- [Data collection, labelling & synthetic data](https://tolgabuyuktanir.github.io/#services)
+- [LLM safety & evaluation](https://tolgabuyuktanir.github.io/#services): authorization-aware context, prompt-injection guards, human hand-off, eval sets.
+- [Big data & data engineering](https://tolgabuyuktanir.github.io/#services): Spark, Kafka, Hadoop, stream processing.
+- [Computer vision, speech & robotics](https://tolgabuyuktanir.github.io/#services): 6-DoF pose estimation, posture analysis, Turkish ASR, robot arms, embedded ML.
+- [R&D & TÜBİTAK grant consulting](https://tolgabuyuktanir.github.io/#services): TEYDEB (1501/1507) and ARDEB proposals.
+
+## Products and case studies
+
+- [CodeBody](https://tolgabuyuktanir.github.io/case/codebody.html): AI-powered SaaS for wellness centers (posture analysis with MediaPipe, YOLO and SAM; Whisper voice notes to session summaries; MCP-backed assistant). Architected and built end to end. Live at https://codebody.com.tr/
+- [NUYA](https://tolgabuyuktanir.github.io/case/nuya.html): one multi-tenant assessment, reporting and AI platform powering seven brands (gonuya.com, burself.co, mirrorme.today, submind.me…). Platform architect and lead engineer.
+- [AskAboutIslam & AskMariam](https://tolgabuyuktanir.github.io/case/askaboutislam.html): social impact AI assistants answering in 20+ languages with cited sources, by text, voice and a talking-head video avatar, on one RAG pipeline.
+
+## Research and open source
+
+- [Crowbar](https://github.com/tolgabuyuktanir/CrowbarDemoApp): smart caching and prefetching, the subject of his PhD thesis; used in the Kahve Dünyası mobile app and Vodafone Yanımda. [Live demo](https://huggingface.co/spaces/tbuyuktanir/CrowbarDemoApp)
+- [concrete-fhe-toolkit](https://github.com/tolgabuyuktanir/concrete-fhe-toolkit): privacy-preserving ML on Zama Concrete (decision trees, random forests, K-Means on encrypted data). On [PyPI](https://pypi.org/project/concrete-fhe-toolkit/).
+- [Publications](https://tolgabuyuktanir.github.io/#research): journals including Knowledge-Based Systems, Applied Sciences, Concurrency and Computation: Practice and Experience and IJSEKE; IEEE BigData, UBMK and SIU conferences; two books.
+- [Google Scholar](https://scholar.google.com/citations?user=D2Md-J4AAAAJ) · [ORCID](https://orcid.org/0000-0001-5317-0028) · [PhD thesis](https://tezara.org/theses/933290)
+
+## Optional
+
+- [Portfolio of projects](https://tolgabuyuktanir.github.io/#projects): BRIFIC e-scooter software, e-scooter AI braking, 6D pose estimation and bin picking, voice-controlled UR5 robot, enterprise document assistant (cloud and air-gapped), LLM agent automation, e-commerce trust layer, crash-free load testing with RL, and more.
+- [Experience](https://tolgabuyuktanir.github.io/#experience)
+- [GitHub](https://github.com/tolgabuyuktanir) · [LinkedIn](https://www.linkedin.com/in/tolga-buyuktanir-ph-d-6b63733a/) · [YouTube](https://www.youtube.com/@tolgabuyuktanir) · [X](https://x.com/tolgabuyuktanir)
